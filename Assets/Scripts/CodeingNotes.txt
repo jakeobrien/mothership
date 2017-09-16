@@ -1,0 +1,10 @@
+*To Do Tasks*
+/*(making the task with an "[x]" means done)*/
+
+
+Greg:
+- Build Baby Behaviour and the vitals for it [x]
+
+Jake:
+
+Steve:
