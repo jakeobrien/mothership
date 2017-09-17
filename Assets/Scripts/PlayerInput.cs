@@ -42,8 +42,9 @@ public class PlayerInput : MonoBehaviour
 
 	private void DoRewired()
 	{
-		_axisValue = player.GetAxis("Axis");
-		CurrentControls.ButtonPressed = player.GetButtonDown("Button");
+		_axisValue = player.GetAxis("MainAxis");
+		if (CurrentControls != null) { CurrentControls.AxisValue = _axisValue; }
+		CurrentControls.ButtonPressed = player.GetButton("Button");
 		if (player.GetButtonDown("CycleUp")) NextControl();
 		if (player.GetButtonDown("CycleDown")) PrevControl();
 	}
