@@ -47846,9 +47846,8 @@ GameObject:
   - component: {fileID: 2013460471}
   - component: {fileID: 2013460476}
   - component: {fileID: 2013460475}
-  - component: {fileID: 2013460472}
   - component: {fileID: 2013460473}
-  - component: {fileID: 2013460474}
+  - component: {fileID: 2013460472}
   m_Layer: 10
   m_Name: TopPincer (1)
   m_TagString: Untagged
@@ -47863,8 +47862,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2013460470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.137, y: 3.6480002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 11.669999, y: 3.29, z: 0}
+  m_LocalScale: {x: 2.7591767, y: 2.7591763, z: 2.7591763}
   m_Children: []
   m_Father: {fileID: 502947143}
   m_RootOrder: 5
@@ -47877,11 +47876,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2013460470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 345ca6288714718488a17106deb058c1, type: 3}
+  m_Script: {fileID: 11500000, guid: fa86d9a40b673e04aa5af7d20bac486e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: 0.2
-  movement: 0
+  _environmentLayers:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!60 &2013460473
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -47924,29 +47924,6 @@ PolygonCollider2D:
       - {x: 1.8440893, y: -0.72184813}
       - {x: 2.1440892, y: -0.6818481}
       - {x: 2.4240892, y: -0.6018481}
---- !u!233 &2013460474
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2013460470}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.9894457, y: 0.35581148}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
-  m_AngleLimits:
-    m_LowerAngle: 360
-    m_UpperAngle: 0
 --- !u!50 &2013460475
 Rigidbody2D:
   serializedVersion: 4
@@ -47959,8 +47936,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 50
-  m_AngularDrag: 50
+  m_LinearDrag: 0
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -49510,8 +49487,6 @@ GameObject:
   - component: {fileID: 2061432904}
   - component: {fileID: 2061432903}
   - component: {fileID: 2061432902}
-  - component: {fileID: 2061432901}
-  - component: {fileID: 2061432905}
   - component: {fileID: 2061432906}
   m_Layer: 10
   m_Name: TopPincer
@@ -49520,29 +49495,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!233 &2061432901
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2061432900}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.973521, y: 0.44369292}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
-  m_AngleLimits:
-    m_LowerAngle: 360
-    m_UpperAngle: 0
 --- !u!50 &2061432902
 Rigidbody2D:
   serializedVersion: 4
@@ -49555,8 +49507,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 50
-  m_AngularDrag: 50
+  m_LinearDrag: 0
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -49612,25 +49564,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2061432900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.083, y: 3.946, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 11.65, y: 3.946, z: 0}
+  m_LocalScale: {x: 2.7591767, y: 2.7591763, z: 2.7591763}
   m_Children: []
   m_Father: {fileID: 502947143}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2061432905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2061432900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 345ca6288714718488a17106deb058c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  torque: -0.2
-  movement: 0
 --- !u!60 &2061432906
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -50775,6 +50714,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2115477977}
   m_Mesh: {fileID: 4300008, guid: ba26fe93c40a8f64ab304dcccb6e473d, type: 3}
+--- !u!1001 &2120548299
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 11.536013
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457427461500996, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396253081535074, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eb08d797ae62b48abadb50bce49309ec, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2121596188
 GameObject:
   m_ObjectHideFlags: 0
