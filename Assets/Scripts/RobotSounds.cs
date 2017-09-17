@@ -31,7 +31,6 @@ public class RobotSounds : MonoBehaviour {
 			audio.clip = walk;
 			if(!audio.isPlaying)
 				audio.Play();
-			Debug.Log(_msInput.Movement);
 		}else{
 			audio.Pause();
 		}
@@ -41,13 +40,11 @@ public class RobotSounds : MonoBehaviour {
 	}
 
 	public void ArmSound(){
-		Debug.Log("still fuckin");
 		armSource.clip = armStart;
         armSource.PlayOneShot(armStart);
 	}
 
 	public void BoobSquirt(){
-		Debug.Log("milk");
 		audio.loop = true;
 		boobSource.clip = boobSquirtStart;
         boobSource.PlayOneShot(boobSquirtStart);

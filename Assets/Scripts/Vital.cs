@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 [System.Serializable]
-public class Vital {
+public class Vital
+{
     [Range(0, 1f)] private float _value = 1f;
     public float speedOfDepletion = 1f;
     public Slider mySlider;

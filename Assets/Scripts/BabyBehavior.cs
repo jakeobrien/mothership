@@ -91,7 +91,6 @@ public class BabyBehavior : MonoBehaviour {
         spriteController.ShowBabyDead();
         if (Died != null) Died(msg);
         //gameOverPanel.SetActive(true);
-        print("GameOver!");
     }
 
     private Vital GetVital(NeedType type)
