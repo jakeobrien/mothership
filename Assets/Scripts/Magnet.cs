@@ -15,7 +15,7 @@ public class Magnet : MonoBehaviour {
 			_target = null;
 			return;
 		}
-        _target.position = this.transform.position;
+        _target.GetComponent<Rigidbody2D>().MovePosition(transform.position);
 	}
 
 	private void OnTriggerEnter2D(Collider2D coll)

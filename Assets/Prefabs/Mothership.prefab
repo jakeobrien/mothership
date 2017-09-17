@@ -308,7 +308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1908662922256434
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,8 +383,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505052598731320}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 11.02, y: 3.2599995, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12.18, y: 2.43, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children:
   - {fileID: 4872346651176984}
   m_Father: {fileID: 4841312283281100}
@@ -1176,6 +1176,8 @@ MonoBehaviour:
   topPinch: {fileID: 114992473675129244}
   bottomPinch: {fileID: 114884907157555752}
   magnet: {fileID: 114362390221260158}
+  milkTank: 1
+  milkDepleteRate: 0
 --- !u!114 &114362390221260158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1190,7 +1192,7 @@ MonoBehaviour:
   isActive: 0
   _environmentLayers:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 6144
 --- !u!114 &114555280785407750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1960,8 +1962,8 @@ ParticleSystem:
     m_BurstCount: 1
     m_Bursts:
     - time: 0
-      minCount: 10
-      maxCount: 10
+      minCount: 3
+      maxCount: 7
       cycleCount: 1
       repeatInterval: 0.01
   SizeModule:
@@ -6995,7 +6997,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -7873,7 +7875,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 1
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -8624,7 +8626,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1.099396, y: -0.69883114}
-  m_ConnectedAnchor: {x: 3.2106042, y: -0.3211696}
+  m_ConnectedAnchor: {x: 2.7215097, y: -0.10292248}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
