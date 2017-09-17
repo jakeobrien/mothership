@@ -9,10 +9,8 @@ public class Pinch : MonoBehaviour {
 	private Sprite sprite;
 	public float torque = 2f;
 	public float movement;
-	private MothershipInput _msInput;
-	// Use this for initialization
+
 	void Start () {
-		_msInput = GetComponentInParent<MothershipInput>();
 		rb = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>().sprite;
 		Debug.Log(sprite.pivot);

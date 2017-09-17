@@ -27,9 +27,9 @@ public class MothershipInput : MonoBehaviour
 		get { return _tiddyArmRotation.AxisValue; }
 	}
 
-	public float OpenCloseClaw
+	public bool OpenCloseClaw
 	{
-		get { return _openCloseClaw.AxisValue; }
+		get { return _openCloseClaw.ButtonPressed; }
 	}
 
 	public bool SecreteMilk

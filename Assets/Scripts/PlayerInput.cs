@@ -6,8 +6,12 @@ using System;
 public class PlayerInput : MonoBehaviour
 {
 
+	public string title;
+	public ControlUI _controlsUI;
+
 	private int _controlsIndex;
-	private Controls CurrentControls { get { return ControlsManager.Instance.GetControls(_controlsIndex); } }
+	private ControlMapping CurrentControlMapping { get { return ControlsManager.Instance.GetControls(_controlsIndex); } }
+	private Controls CurrentControls { get { return CurrentControlMapping.controls; } }
 
 	public KeyCode increaseKeyCode;
 	public KeyCode decreaseKeyCode;
@@ -19,6 +23,12 @@ public class PlayerInput : MonoBehaviour
 	private float _axisCursor;
 	public float _axisSmooth = 0.1f;
 	public float _axisDamp = 0.5f;
+
+	private void Start()
+	{
+		_controlsUI.playerText.text = title;
+		_controlsUI.controlsText.text = CurrentControlMapping.type.ToString();
+	}
 
 	private void Update()
 	{
@@ -57,12 +67,14 @@ public class PlayerInput : MonoBehaviour
 	{
 		ResetControls();
 		_controlsIndex = ControlsManager.Instance.GetNext(_controlsIndex);
+		_controlsUI.controlsText.text = CurrentControlMapping.type.ToString();
 	}
 
 	private void PrevControl()
 	{
 		ResetControls();
 		_controlsIndex = ControlsManager.Instance.GetPrev(_controlsIndex);
+		_controlsUI.controlsText.text = CurrentControlMapping.type.ToString();
 	}
 
 	private void ResetControls()
