@@ -13,6 +13,7 @@ public class BabyBehavior : MonoBehaviour {
     private BabySpriteController spriteController;
 
     public float feedRate;
+    public float sleepRate;
     public GameObject gameOverPanel;
     public float gameOverDelay = 1f;
     private BabySound bs;
@@ -85,6 +86,11 @@ public class BabyBehavior : MonoBehaviour {
     {
         GetVital(NeedType.food).Value += feedRate;
         bs.Feed();
+    }
+
+    public void Sleep()
+    {
+        GetVital(NeedType.sleep).Value += sleepRate;
     }
 
     void BabyFail(string msg) {

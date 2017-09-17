@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1910994795412728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.65, y: -0.37, z: 0}
+  m_LocalPosition: {x: 5.65, y: -0.37, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4403501396154092}
@@ -378,7 +378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dca88c13de81b741a6061075c954bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedRate: 0
+  feedRate: 0.2
+  sleepRate: 0.2
   gameOverPanel: {fileID: 0}
   gameOverDelay: 1
   poopPrefab: {fileID: 1248021834319126, guid: 7fda4bcde52804c118d24936688b23a3, type: 2}
@@ -387,17 +388,17 @@ MonoBehaviour:
   _needs:
   - type: 1
     vital:
-      speedOfDepletion: 0.125
+      speedOfDepletion: 0.033
       mySlider: {fileID: 0}
       deathMessage: you starved your baby. you had so much milk.
   - type: 2
     vital:
-      speedOfDepletion: 0.125
+      speedOfDepletion: 0.01
       mySlider: {fileID: 0}
       deathMessage: you murdered you baby with exhaustion
   - type: 4
     vital:
-      speedOfDepletion: 0.25
+      speedOfDepletion: 0.08
       mySlider: {fileID: 0}
       deathMessage: 
   poop: {fileID: 198277359384670328, guid: 7e60e1338bcff45d59e73916cff0a45a, type: 2}

@@ -8,7 +8,7 @@ public enum States { feeding = 1 << 0, hungry = 1 << 1, normal = 1 << 2, pooping
 
 public class BabySpriteController : MonoBehaviour {
     public Sprite[] bodySprites;
-
+    public bool isHeld;
     public Sprite poopingFace, calmFace, upsetFace, deadFace;
 
     public GameObject faceObject, bodyObject;
@@ -61,8 +61,12 @@ public class BabySpriteController : MonoBehaviour {
     }
 
     public void ImHeld() {
+        isHeld = true;
         bodyRenderer.sprite = bodySprites[1];
-    } public void ImNotHeld() {
+    }
+
+    public void ImNotHeld() {
+        isHeld = false;
         bodyRenderer.sprite = bodySprites[0];
     }
 }

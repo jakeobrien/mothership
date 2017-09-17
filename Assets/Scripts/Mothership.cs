@@ -9,8 +9,9 @@ public class Mothership : MonoBehaviour
 	public RotateAround clawArm;
 	public RotateAround tiddyArm;
 	public ParticleSystem milkSplurt;
+	public float cooDistance;
 	public Rigidbody2D rb;
-
+	public BabyBehavior baby;
 	public MothershipInput input;
 	public Pinch topPinch;
 	public Pinch bottomPinch;
@@ -35,8 +36,18 @@ public class Mothership : MonoBehaviour
 		if (input.SecreteMilk) milkTank -= milkDepleteRate * Time.deltaTime;
 		if (milkTank < 0f) milkTank = 0f;
 		magnet.isActive = input.OpenCloseClaw;
+		CheckLullaby();
 		// topPinch.input = input.OpenCloseClaw;
 		// bottomPinch.input = input.OpenCloseClaw;
+	}
+
+	private void CheckLullaby()
+	{
+		if (!input.SingLullaby) return;
+		if (baby.GetComponent<BabySpriteController>().isHeld) return;
+		var dist = ((Vector2)(baby.transform.position - transform.position)).magnitude;
+		if (dist > cooDistance) return;
+		baby.Sleep();
 	}
 
 	private void SchtartSchplurtin()
