@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: adde487557d6b5f409880260e4d5a2bc
-timeCreated: 1505631246
+timeCreated: 1505646369
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -96,7 +96,7 @@ TextureImporter:
         width: 692
         height: 563
       alignment: 9
-      pivot: {x: 0.5, y: 0.01044601}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

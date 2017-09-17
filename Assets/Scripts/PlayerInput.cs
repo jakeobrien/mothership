@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Rewired;
 
 public class PlayerInput : MonoBehaviour
 {
 
 	public string title;
+    public int playerId = 0;
+    private Player player;
 	public ControlUI _controlsUI;
 
 	private int _controlsIndex;
@@ -18,7 +21,7 @@ public class PlayerInput : MonoBehaviour
 	public KeyCode buttonKeyCode;
 	public KeyCode nextControlKeyCode;
 	public KeyCode prevControlKeyCode;
-
+	public bool useRewired;
 	private float _axisValue;
 	private float _axisCursor;
 	public float _axisSmooth = 0.1f;
@@ -26,11 +29,26 @@ public class PlayerInput : MonoBehaviour
 
 	private void Start()
 	{
+		player = ReInput.players.GetPlayer(playerId);
 		_controlsUI.playerText.text = title;
 		_controlsUI.controlsText.text = CurrentControlMapping.type.ToString();
 	}
 
 	private void Update()
+	{
+		if (useRewired) DoRewired();
+		else DoKeyboard();
+	}
+
+	private void DoRewired()
+	{
+		_axisValue = player.GetAxis("Axis");
+		CurrentControls.ButtonPressed = player.GetButtonDown("Button");
+		if (player.GetButtonDown("CycleUp")) NextControl();
+		if (player.GetButtonDown("CycleDown")) PrevControl();
+	}
+
+	private void DoKeyboard()
 	{
 		if (Input.GetKey(increaseKeyCode))
 		{
