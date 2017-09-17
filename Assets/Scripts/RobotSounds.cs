@@ -15,11 +15,15 @@ public class RobotSounds : MonoBehaviour {
 	public AudioClip walk;
 	private AudioPool aPool;
 	private AudioSource audio;
+	private AudioSource armSource;
+	private AudioSource boobSource;
 	// Use this for initialization
 	void Start () {
 		_msInput = GetComponentInParent<MothershipInput>();
 		aPool = GetComponent<AudioPool>();
-		audio = aPool.GetAudioSourceFromPool();
+		audio = GetComponent<AudioSource>();
+		armSource = aPool.GetAudioSourceFromPool();
+		boobSource = aPool.GetAudioSourceFromPool();
 		audio.loop = true;
 	}
 
@@ -28,9 +32,13 @@ public class RobotSounds : MonoBehaviour {
 		if(_msInput.ArmRotation != 0){
 			ArmSound();
 		}
-		if(_msInput.Movement != 0){
+		if(Mathf.Abs(_msInput.Movement)>0.1f){
 			audio.clip = walk;
-			audio.Play();
+			if(!audio.isPlaying)
+				audio.Play();
+			Debug.Log(_msInput.Movement);
+		}else{
+			audio.Pause();
 		}
 		/*if(_msInput.magnet == something){
 			audio.PlayOneShot(clampSoft);
@@ -38,16 +46,18 @@ public class RobotSounds : MonoBehaviour {
 	}
 
 	public void ArmSound(){
-		audio.clip = armStart;
-        audio.PlayOneShot(armStart);
+		Debug.Log("still fuckin");
+		armSource.clip = armStart;
+        armSource.PlayOneShot(armStart);
 	}
 
 	public void BoobSquirt(){
-		audio.clip = boobSquirtStart;
-        	audio.Play();
+		Debug.Log("milk");
+		armSource.clip = boobSquirtStart;
+        armSource.Play();
 	}
 
-	public void StopRobotSounds(){
-		audio.Stop();
+	public void StopArmSound(){
+		armSource.Stop();
 	}
 }

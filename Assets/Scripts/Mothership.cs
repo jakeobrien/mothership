@@ -23,7 +23,7 @@ public class Mothership : MonoBehaviour
 	{
 		rb.velocity = input.Movement * movementSpeed * Vector2.right;
 		clawArm.input = input.ArmRotation;
-		if(input.ArmRotation == 1 || input.ArmRotation == -1) {
+		if(Mathf.Abs(input.ArmRotation)>0.1f) {
 			StartArm();
 		}else{
 			StopArm();
@@ -48,14 +48,15 @@ public class Mothership : MonoBehaviour
 	private void SchtopSchplurtin()
 	{
 		milkSplurt.Stop(false, ParticleSystemStopBehavior.StopEmitting);
-		rs.StopRobotSounds();
+		//rs.StopRobotSounds();
 	}
 
 	private void StartArm(){
+		Debug.Log("fucko");
 		rs.ArmSound();
 	}
 	private void StopArm(){
-		//rs.StopRobotSounds();
+		rs.StopArmSound();
 	}
 
 }
