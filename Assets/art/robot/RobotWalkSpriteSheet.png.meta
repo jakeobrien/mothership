@@ -1,9 +1,54 @@
 fileFormatVersion: 2
 guid: 6d456e8891a9a644d8413c72ad076ca6
-timeCreated: 1505665243
+timeCreated: 1505665724
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: RobotWalkSpriteSheet_0
+    21300002: RobotWalkSpriteSheet_1
+    21300004: RobotWalkSpriteSheet_2
+    21300006: RobotWalkSpriteSheet_3
+    21300008: RobotWalkSpriteSheet_4
+    21300010: RobotWalkSpriteSheet_5
+    21300012: RobotWalkSpriteSheet_6
+    21300014: RobotWalkSpriteSheet_7
+    21300016: RobotWalkSpriteSheet_8
+    21300018: RobotWalkSpriteSheet_9
+    21300020: RobotWalkSpriteSheet_10
+    21300022: RobotWalkSpriteSheet_11
+    21300024: RobotWalkSpriteSheet_12
+    21300026: RobotWalkSpriteSheet_13
+    21300028: RobotWalkSpriteSheet_14
+    21300030: RobotWalkSpriteSheet_15
+    21300032: RobotWalkSpriteSheet_16
+    21300034: RobotWalkSpriteSheet_17
+    21300036: RobotWalkSpriteSheet_18
+    21300038: RobotWalkSpriteSheet_19
+    21300040: RobotWalkSpriteSheet_20
+    21300042: RobotWalkSpriteSheet_21
+    21300044: RobotWalkSpriteSheet_22
+    21300046: RobotWalkSpriteSheet_23
+    21300048: RobotWalkSpriteSheet_24
+    21300050: RobotWalkSpriteSheet_25
+    21300052: RobotWalkSpriteSheet_26
+    21300054: RobotWalkSpriteSheet_27
+    21300056: RobotWalkSpriteSheet_28
+    21300058: RobotWalkSpriteSheet_29
+    21300060: RobotWalkSpriteSheet_30
+    21300062: RobotWalkSpriteSheet_31
+    21300064: RobotWalkSpriteSheet_32
+    21300066: RobotWalkSpriteSheet_33
+    21300068: RobotWalkSpriteSheet_34
+    21300070: RobotWalkSpriteSheet_35
+    21300072: RobotWalkSpriteSheet_36
+    21300074: RobotWalkSpriteSheet_37
+    21300076: RobotWalkSpriteSheet_38
+    21300078: RobotWalkSpriteSheet_39
+    21300080: RobotWalkSpriteSheet_40
+    21300082: RobotWalkSpriteSheet_41
+    21300084: RobotWalkSpriteSheet_42
+    21300086: RobotWalkSpriteSheet_43
+    21300088: RobotWalkSpriteSheet_44
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,7 +84,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,9 +108,647 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2133
+        width: 583
+        height: 1443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 2135
+        width: 592
+        height: 1451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 2133
+        width: 580
+        height: 1437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 2135
+        width: 584
+        height: 1407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 3118
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 2135
+        width: 590
+        height: 1396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 3134
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2855
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 2849
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2837
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 2837
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 2829
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 2809
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 2789
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 3879
+        y: 2799
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 2789
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 2791
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 2779
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 2763
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3865
+        y: 2753
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 2743
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 2745
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 2735
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 2115
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 2120
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 55
+        width: 608
+        height: 1409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1068
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 29
+        width: 591
+        height: 1399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 31
+        width: 582
+        height: 1423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1022
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1020
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 787
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 737
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 733
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 729
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 689
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 690
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 685
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 679
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 657
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 639
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 635
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 47
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 13
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotWalkSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 15
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

@@ -13,6 +13,6 @@ public class MilkTank : MonoBehaviour
     }
 
     void Update() {
-        milkTankSlider.value = motherShip.milkTank;
+        //milkTankSlider.value = motherShip.milkTank;
     }
 }
