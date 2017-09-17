@@ -13,18 +13,13 @@ public class RobotSounds : MonoBehaviour {
 	public AudioClip boobSquirtLoop;
 	public AudioClip lullaby;
 	public AudioClip walk;
-	private AudioPool aPool;
-	private AudioSource audio;
-	private AudioSource armSource;
-	private AudioSource boobSource;
+	public AudioSource audio;
+	public AudioSource armSource;
+	public AudioSource boobSource;
 	// Use this for initialization
 	void Start () {
 		_msInput = GetComponentInParent<MothershipInput>();
-		aPool = GetComponent<AudioPool>();
-		audio = GetComponent<AudioSource>();
-		armSource = aPool.GetAudioSourceFromPool();
-		boobSource = aPool.GetAudioSourceFromPool();
-		audio.loop = true;
+
 	}
 
 	// Update is called once per frame
@@ -53,11 +48,13 @@ public class RobotSounds : MonoBehaviour {
 
 	public void BoobSquirt(){
 		Debug.Log("milk");
-		armSource.clip = boobSquirtStart;
-        armSource.Play();
+		audio.loop = true;
+		boobSource.clip = boobSquirtStart;
+        boobSource.PlayOneShot(boobSquirtStart);
 	}
 
 	public void StopArmSound(){
-		armSource.Stop();
+		if(armSource.isPlaying)
+			armSource.Stop();
 	}
 }
