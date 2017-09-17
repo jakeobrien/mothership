@@ -18,20 +18,16 @@ public class RobotSounds : MonoBehaviour {
 	void Start () {
 		_msInput = GetComponentInParent<MothershipInput>();
 		audio = GetComponent<AudioSource>();
+		audio.loop = true;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if(_msInput.ArmRotation != 0){
-			StartCoroutine(ArmSound());
-		}
-
-		if(_msInput.SecreteMilk){
-			StartCoroutine(BoobSquirt());
+			ArmSound();
 		}
 		if(_msInput.Movement != 0){
 			audio.clip = walk;
-			audio.loop = true;
 			audio.Play();
 		}else{
 			audio.loop = false;
@@ -41,21 +37,19 @@ public class RobotSounds : MonoBehaviour {
 		}*/
 	}
 
-	IEnumerator ArmSound(){
-		//audio.clip = armStart;
+	public void ArmSound(){
+		audio.clip = armStart;
         audio.PlayOneShot(armStart);
-        yield return new WaitForSeconds(audio.clip.length);
-        audio.clip = armLoop;
-        audio.Play();
 	}
 
-	IEnumerator BoobSquirt(){
-		//audio.clip = armStart;
+	public void BoobSquirt(){
+		audio.clip = boobSquirtStart;
+		Debug.Log("fuck this game");
 		if(!audio.isPlaying)
-        	audio.PlayOneShot(boobSquirtStart);
-        yield return new WaitForSeconds(audio.clip.length);
-        audio.clip = boobSquirtLoop;
-        if(!audio.isPlaying)
-       		audio.Play();
+        	audio.Play();
+	}
+
+	public void StopRobotSounds(){
+		audio.Stop();
 	}
 }
