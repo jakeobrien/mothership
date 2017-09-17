@@ -8,10 +8,12 @@ using UnityEngine.UI;
 public enum NeedType { food = 1, sleep = 2, poop = 4,}
 
 public class BabyBehavior : MonoBehaviour {
+    private BabySpriteController spriteController;
 
     public float feedRate;
     public GameObject gameOverPanel;
     public float gameOverDelay = 1f;
+    private BabySound bs;
 
     [System.Serializable]
     public class Need
@@ -29,6 +31,8 @@ public class BabyBehavior : MonoBehaviour {
 
     private void Start() {
         //gameOverPanel.SetActive(false);
+        bs = GetComponent<BabySound>();
+        spriteController = GetComponent<BabySpriteController>();
         foreach(Need need in _needs) {
             need.vital.Value = 1f;
         }
@@ -59,8 +63,10 @@ public class BabyBehavior : MonoBehaviour {
 	}
 
     private void PoopTrigger() {
+        spriteController.MakePoopFace();
         poop.gameObject.SetActive(true);
         poop.Play();
+        //bs.Poop();
     }
 
     public void RefillVital(int val) {
@@ -71,9 +77,11 @@ public class BabyBehavior : MonoBehaviour {
     public void Feed()
     {
         GetVital(NeedType.food).Value += feedRate;
+        bs.Feed();
     }
 
     void BabyFail() {
+        spriteController.ShowBabyDead();
         //gameOverPanel.SetActive(true);
         print("GameOver!");
     }
