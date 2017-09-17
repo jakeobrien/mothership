@@ -5,41 +5,42 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [Flags]
-public enum Needs { food = 1, sleep = 2, poop = 4}
+public enum NeedType { food = 1, sleep = 2, poop = 4,}
 
 public class BabyBehavior : MonoBehaviour {
-
-    private Dictionary<Needs, Vital> _needs = new Dictionary<Needs, Vital>();
-
-    public Slider foodSlider, sleepSlider, poopSlider;
-    [Header("Decrement Speed of each Need")]
-    public float foodDecRate;
-    public float sleepDecRate, poopDecRate;
-
-    void Start () {
-        _needs[Needs.food] = new Vital(1f,foodDecRate);
-        _needs[Needs.sleep] = new Vital(1f, sleepDecRate);
-        _needs[Needs.poop] = new Vital(1f, poopDecRate);
+    [System.Serializable]
+    private class Need
+    {
+        public NeedType type;
+        public Vital vital;
     }
-	
-	void Update () {
-        foreach (var kvp in _needs) {
-            kvp.Value.value -= kvp.Value.speedOfDepletion * Time.deltaTime;
-            switch (kvp.Key) {
-                case Needs.food: { foodSlider.value = kvp.Value.value; }
-                    break;
-                case Needs.sleep: { sleepSlider.value = kvp.Value.value; }
-                    break;
-                case Needs.poop: { poopSlider.value = kvp.Value.value; }
-                    break;
-            }
-            if(kvp.Value.value <= 0) { BabyFail(); }
+
+    [SerializeField]
+    private Need[] _needs;
+
+    public Slider grumpySlider;
+    public float grumpySliderDecrementRate;
+
+    private void Start() {
+        foreach(Need need in _needs) {
+            need.vital.value = 1f;
+        }
+        grumpySlider.value = 1f;
+    }
+
+    void Update () {
+        foreach (Need need in _needs) {
+            need.vital.value -= need.vital.speedOfDepletion * Time.deltaTime;
+            need.vital.mySlider.value = need.vital.value;
+            if(need.vital.value <= 0) { BabyFail(); }
+            else if(need.vital.value <= 0.5f) { grumpySlider.value -= grumpySliderDecrementRate; if (grumpySlider.value <= 0) { BabyFail(); } }
         }
 	}
 
+
     public void RefillVital(int val) {
-        if(_needs[(Needs)val].value != 0)
-        _needs[(Needs)val].value = 1f;
+        if(_needs[val].vital.value != 0)
+        _needs[val].vital.value = 1f;
     }
 
     void BabyFail() {
