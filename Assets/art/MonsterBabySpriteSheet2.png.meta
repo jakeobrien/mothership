@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 811800589964c6f4e99024e35b5074c3
+timeCreated: 1505634690
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Monster_NotHeld
+    21300002: Monster_Held
+    21300004: Monster_Head
+    21300006: Monster_Hungry
+    21300008: Monster_Normal
+    21300010: Monster_Feeding
+    21300012: Monster_Sleepy
+    21300014: Monster_Pooping
+    21300016: Monster_Sleeping_Eating
+    21300018: Monster_Sleeping_Hungry
+    21300020: Monster_Sleeping_Pooping
+    21300022: Monster_Sleeping
+    21300024: Monster_Sleepy_Pooping
+    21300026: Monster_Dead
+    21300028: MonsterBabySpriteSheet2_14
+    21300030: MonsterBabySpriteSheet2_15
+    21300032: MonsterBabySpriteSheet2_16
+    21300034: MonsterBabySpriteSheet2_17
+    21300036: MonsterBabySpriteSheet2_18
+    21300038: MonsterBabySpriteSheet2_19
+    21300040: MonsterBabySpriteSheet2_20
+    21300042: MonsterBabySpriteSheet2_21
+    21300044: MonsterBabySpriteSheet2_22
+    21300046: MonsterBabySpriteSheet2_23
+    21300048: MonsterBabySpriteSheet2_24
+    21300050: MonsterBabySpriteSheet2_25
+    21300052: MonsterBabySpriteSheet2_26
+    21300054: MonsterBabySpriteSheet2_27
+    21300056: MonsterBabySpriteSheet2_28
+    21300058: MonsterBabySpriteSheet2_29
+    21300060: MonsterBabySpriteSheet2_30
+    21300062: MonsterBabySpriteSheet2_31
+    21300064: MonsterBabySpriteSheet2_32
+    21300066: MonsterBabySpriteSheet2_33
+    21300068: MonsterBabySpriteSheet2_34
+    21300070: MonsterBabySpriteSheet2_35
+    21300072: MonsterBabySpriteSheet2_36
+    21300074: MonsterBabySpriteSheet2_37
+    21300076: MonsterBabySpriteSheet2_38
+    21300078: MonsterBabySpriteSheet2_39
+    21300080: MonsterBabySpriteSheet2_40
+    21300082: MonsterBabySpriteSheet2_41
+    21300084: MonsterBabySpriteSheet2_42
+    21300086: MonsterBabySpriteSheet2_43
+    21300088: MonsterBabySpriteSheet2_44
+    21300090: MonsterBabySpriteSheet2_45
+    21300092: MonsterBabySpriteSheet2_46
+    21300094: MonsterBabySpriteSheet2_47
+    21300096: MonsterBabySpriteSheet2_48
+    21300098: MonsterBabySpriteSheet2_49
+    21300100: MonsterBabySpriteSheet2_50
+    21300102: MonsterBabySpriteSheet2_51
+    21300104: MonsterBabySpriteSheet2_52
+    21300106: MonsterBabySpriteSheet2_53
+    21300108: MonsterBabySpriteSheet2_54
+    21300110: MonsterBabySpriteSheet2_55
+    21300112: MonsterBabySpriteSheet2_56
+    21300114: MonsterBabySpriteSheet2_57
+    21300116: MonsterBabySpriteSheet2_58
+    21300118: MonsterBabySpriteSheet2_59
+    21300120: MonsterBabySpriteSheet2_60
+    21300122: MonsterBabySpriteSheet2_61
+    21300124: MonsterBabySpriteSheet2_62
+    21300126: MonsterBabySpriteSheet2_63
+    21300128: MonsterBabySpriteSheet2_64
+    21300130: MonsterBabySpriteSheet2_65
+    21300132: MonsterBabySpriteSheet2_66
+    21300134: MonsterBabySpriteSheet2_67
+    21300136: MonsterBabySpriteSheet2_68
+    21300138: MonsterBabySpriteSheet2_69
+    21300140: MonsterBabySpriteSheet2_70
+    21300142: MonsterBabySpriteSheet2_71
+    21300144: MonsterBabySpriteSheet2_72
+    21300146: MonsterBabySpriteSheet2_73
+    21300148: MonsterBabySpriteSheet2_74
+    21300150: MonsterBabySpriteSheet2_75
+    21300152: MonsterBabySpriteSheet2_76
+    21300154: MonsterBabySpriteSheet2_77
+    21300156: MonsterBabySpriteSheet2_78
+    21300158: MonsterBabySpriteSheet2_79
+    21300160: MonsterBabySpriteSheet2_80
+    21300162: MonsterBabySpriteSheet2_81
+    21300164: MonsterBabySpriteSheet2_82
+    21300166: MonsterBabySpriteSheet2_83
+    21300168: MonsterBabySpriteSheet2_84
+    21300170: MonsterBabySpriteSheet2_85
+    21300172: MonsterBabySpriteSheet2_86
+    21300174: MonsterBabySpriteSheet2_87
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monster_NotHeld
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Held
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Head
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Hungry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Normal
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Feeding
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Sleepy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Pooping
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Sleeping_Eating
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Sleeping_Hungry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Sleeping_Pooping
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Sleeping
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Sleepy_Pooping
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Monster_Dead
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
