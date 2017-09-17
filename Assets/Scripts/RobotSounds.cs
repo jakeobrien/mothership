@@ -31,8 +31,6 @@ public class RobotSounds : MonoBehaviour {
 		if(_msInput.Movement != 0){
 			audio.clip = walk;
 			audio.Play();
-		}else{
-			audio.loop = false;
 		}
 		/*if(_msInput.magnet == something){
 			audio.PlayOneShot(clampSoft);
