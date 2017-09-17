@@ -17,7 +17,7 @@ public class BabySpriteController : MonoBehaviour {
 
     private void Update() {
         foreach (BabyBehavior.Need need in myNeeds) {
-            if (need.vital.value <= 0.5f) {
+            if (need.vital.Value <= 0.5f) {
                 switch (need.type) {
                     case NeedType.food: { }
                         break;

@@ -9,6 +9,7 @@ public enum NeedType { food = 1, sleep = 2, poop = 4,}
 
 public class BabyBehavior : MonoBehaviour {
 
+    public float feedRate;
     public GameObject gameOverPanel;
     public float gameOverDelay = 1f;
 
@@ -24,11 +25,12 @@ public class BabyBehavior : MonoBehaviour {
 
     [SerializeField]
     public Need[] _needs;
+    public ParticleSystem poop;
 
     private void Start() {
         //gameOverPanel.SetActive(false);
         foreach(Need need in _needs) {
-            need.vital.value = 1f;
+            need.vital.Value = 1f;
         }
         grumpySlider.value = 1f;
         StartCoroutine(GameSession());
@@ -38,9 +40,18 @@ public class BabyBehavior : MonoBehaviour {
         bool inSession = true;
         while (inSession) {
             foreach (Need need in _needs) {
-                need.vital.value -= need.vital.speedOfDepletion * Time.deltaTime;
-                need.vital.mySlider.value = need.vital.value;
-                if (need.type == NeedType.poop) { if (need.vital.value <= 0) { PoopTrigger(); need.vital.value = 1f; } } else if (need.vital.value <= 0) { inSession = false; } else if (need.vital.value <= 0.5f) { grumpySlider.value -= grumpySliderDecrementRate; if (grumpySlider.value <= 0) { inSession = false; } }
+                need.vital.Value -= need.vital.speedOfDepletion * Time.deltaTime;
+                if (need.type == NeedType.poop) {
+                    if (need.vital.Value <= 0) {
+                         PoopTrigger();
+                         need.vital.Value = 1f;
+                    }
+                } else if (need.vital.Value <= 0) {
+                    inSession = false;
+                } else if (need.vital.Value <= 0.5f) {
+                    grumpySlider.value -= grumpySliderDecrementRate;
+                    if (grumpySlider.value <= 0) inSession = false;
+                }
             }
             yield return null;
         }
@@ -48,16 +59,32 @@ public class BabyBehavior : MonoBehaviour {
 	}
 
     private void PoopTrigger() {
-        print("Im Pooping!");
+        poop.gameObject.SetActive(true);
+        poop.Play();
     }
 
     public void RefillVital(int val) {
-        if(_needs[val].vital.value != 0)
-        _needs[val].vital.value = 1f;
+        if(_needs[val].vital.Value != 0)
+        _needs[val].vital.Value = 1f;
+    }
+
+    public void Feed()
+    {
+        GetVital(NeedType.food).Value += feedRate;
     }
 
     void BabyFail() {
         //gameOverPanel.SetActive(true);
         print("GameOver!");
     }
+
+    private Vital GetVital(NeedType type)
+    {
+        foreach (var need in _needs)
+        {
+            if (need.type == type) return need.vital;
+        }
+        return null;
+    }
+
 }

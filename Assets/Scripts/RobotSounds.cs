@@ -19,7 +19,7 @@ public class RobotSounds : MonoBehaviour {
 		_msInput = GetComponentInParent<MothershipInput>();
 		audio = GetComponent<AudioSource>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if(_msInput.ArmRotation != 0){

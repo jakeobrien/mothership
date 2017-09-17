@@ -14,14 +14,23 @@ public class Mothership : MonoBehaviour
 	public Pinch topPinch;
 	public Pinch bottomPinch;
 	public Magnet magnet;
+	public float milkTank = 1f;
+	public float milkDepleteRate;
+
 
 	private void Update()
 	{
 		rb.velocity = input.Movement * movementSpeed * Vector2.right;
 		clawArm.input = input.ArmRotation;
 		tiddyArm.input = input.TiddyArmRotation;
-		if (input.SecreteMilk && !milkSplurt.isEmitting) milkSplurt.Play();
-		if (!input.SecreteMilk && milkSplurt.isEmitting) milkSplurt.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+		if (input.SecreteMilk && !milkSplurt.isEmitting && milkTank > 0f)
+		{
+			milkSplurt.gameObject.SetActive(true);
+			milkSplurt.Play();
+		}
+		if ((!input.SecreteMilk || milkTank <= 0f) && milkSplurt.isEmitting) milkSplurt.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+		if (input.SecreteMilk) milkTank -= milkDepleteRate * Time.deltaTime;
+		if (milkTank < 0f) milkTank = 0f;
 		magnet.isActive = input.OpenCloseClaw;
 		// topPinch.input = input.OpenCloseClaw;
 		// bottomPinch.input = input.OpenCloseClaw;
