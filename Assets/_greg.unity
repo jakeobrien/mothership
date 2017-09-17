@@ -553,21 +553,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188cb8e1e5f7ba043a9f48e391db98b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  faceSprites:
-  - {fileID: 21300026, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300008, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300006, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300010, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300014, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300022, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300016, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300018, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300020, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300012, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
-  - {fileID: 21300024, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
   bodySprites:
   - {fileID: 21300000, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
   - {fileID: 21300002, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
+  poopingFace: {fileID: 21300020, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
+  calmFace: {fileID: 21300008, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
+  upsetFace: {fileID: 21300016, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
+  deadFace: {fileID: 21300026, guid: 811800589964c6f4e99024e35b5074c3, type: 3}
   faceObject: {fileID: 1092410702}
   bodyObject: {fileID: 2140235040}
 --- !u!114 &602219875

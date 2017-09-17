@@ -7,11 +7,11 @@ using UnityEngine;
 public enum States { feeding = 1 << 0, hungry = 1 << 1, normal = 1 << 2, pooping = 1 << 3, sleeping = 1 << 4 , sleepy = 1 << 5 }
 
 public class BabySpriteController : MonoBehaviour {
-    public Sprite[] faceSprites, bodySprites;
+    public Sprite[] bodySprites;
+
+    public Sprite poopingFace, calmFace, upsetFace, deadFace;
 
     public GameObject faceObject, bodyObject;
-
-    private States currentState;
 
     private SpriteRenderer faceRenderer, bodyRenderer;
     private BabyBehavior myBehavior;
@@ -41,16 +41,16 @@ public class BabySpriteController : MonoBehaviour {
             yield return null;
         }
     } private void DetermineFace(bool ans) {
-        if (ans) { SetFaceToRender(7); } else { SetFaceToRender(1); }
+        if (ans) { faceRenderer.sprite = upsetFace; } else { faceRenderer.sprite = calmFace; }
     }
 
     public void ShowBabyDead() {
         inSession = false;
-        faceRenderer.sprite = faceSprites[0];
+        faceRenderer.sprite = deadFace;
     }
     public void MakePoopFace() {
         isPooping = true;
-        faceRenderer.sprite = faceSprites[8];
+        faceRenderer.sprite = poopingFace;
         Invoke("EndPoopFace", 2f);
     } private void EndPoopFace() {
         isPooping = false;
@@ -64,12 +64,5 @@ public class BabySpriteController : MonoBehaviour {
         bodyRenderer.sprite = bodySprites[1];
     } public void ImNotHeld() {
         bodyRenderer.sprite = bodySprites[0];
-    }
-
-    private void SetFaceToRender(int that) {
-        faceRenderer.sprite = faceSprites[that];
-    }
-    private void SetBodyToRender(int that) {
-        faceRenderer.sprite = faceSprites[that];
     }
 }
