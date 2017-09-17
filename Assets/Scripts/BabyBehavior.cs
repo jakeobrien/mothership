@@ -8,12 +8,15 @@ using UnityEngine.UI;
 public enum NeedType { food = 1, sleep = 2, poop = 4,}
 
 public class BabyBehavior : MonoBehaviour {
+
+    public static Action<string> Died;
     private BabySpriteController spriteController;
 
     public float feedRate;
     public GameObject gameOverPanel;
     public float gameOverDelay = 1f;
     private BabySound bs;
+    public GameObject poopPrefab;
 
     [System.Serializable]
     public class Need
@@ -41,8 +44,7 @@ public class BabyBehavior : MonoBehaviour {
     }
 
     IEnumerator GameSession() {
-        bool inSession = true;
-        while (inSession) {
+        while (true) {
             foreach (Need need in _needs) {
                 need.vital.Value -= need.vital.speedOfDepletion * Time.deltaTime;
                 if (need.type == NeedType.poop) {
@@ -51,19 +53,24 @@ public class BabyBehavior : MonoBehaviour {
                          need.vital.Value = 1f;
                     }
                 } else if (need.vital.Value <= 0) {
-                    inSession = false;
+                    BabyFail(need.vital.deathMessage);
+                    break;
                 } else if (need.vital.Value <= 0.5f) {
                     grumpySlider.value -= grumpySliderDecrementRate;
-                    if (grumpySlider.value <= 0) inSession = false;
+                    if (grumpySlider.value <= 0)
+                    {
+                        BabyFail("your baby died from the grumps");
+                        break;
+                    }
                 }
             }
             yield return null;
         }
-        Invoke("BabyFail", gameOverDelay);
 	}
 
     private void PoopTrigger() {
         spriteController.MakePoopFace();
+        Instantiate(poopPrefab, transform.position + Vector3.right * 2f, Quaternion.identity);
         poop.gameObject.SetActive(true);
         poop.Play();
         //bs.Poop();
@@ -80,8 +87,9 @@ public class BabyBehavior : MonoBehaviour {
         bs.Feed();
     }
 
-    void BabyFail() {
+    void BabyFail(string msg) {
         spriteController.ShowBabyDead();
+        if (Died != null) Died(msg);
         //gameOverPanel.SetActive(true);
         print("GameOver!");
     }

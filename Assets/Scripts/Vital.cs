@@ -7,6 +7,7 @@ public class Vital {
     [Range(0, 1f)] private float _value = 1f;
     public float speedOfDepletion = 1f;
     public Slider mySlider;
+    public string deathMessage;
     public Vital(float val, float speedOfD) {
         _value = val;
         this.speedOfDepletion = speedOfD;
