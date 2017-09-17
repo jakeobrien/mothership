@@ -42,15 +42,15 @@ public class ControlsManager : MonoBehaviour
 
 	public int GetNext(int current)
 	{
-		var next = current++;
-		if (current >= _mappings.Length) next = 0;
+		var next = current + 1;
+		if (next >= _mappings.Length) next = 0;
 		return next;
 	}
 
 	public int GetPrev(int current)
 	{
-		var prev = current--;
-		if (current < 0) prev = _mappings.Length - 1;
+		var prev = current - 1;
+		if (prev < 0) prev = _mappings.Length - 1;
 		return prev;
 	}
 

@@ -23,7 +23,7 @@ public class PlayerInput : MonoBehaviour
 		}
 		else if (Input.GetKeyDown(decreaseKeyCode))
 		{
-			if (CurrentControls != null) CurrentControls.AxisValue = 0f;
+			if (CurrentControls != null) CurrentControls.AxisValue = -1f;
 		}
 		if (Input.GetKeyDown(buttonKeyCode))
 		{
