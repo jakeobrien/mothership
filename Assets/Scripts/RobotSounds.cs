@@ -13,7 +13,7 @@ public class RobotSounds : MonoBehaviour {
 	public AudioClip boobSquirtLoop;
 	public AudioClip lullaby;
 	public AudioClip walk;
-	public AudioSource audio;
+	private AudioSource audio;
 	// Use this for initialization
 	void Start () {
 		_msInput = GetComponentInParent<MothershipInput>();
@@ -51,9 +51,11 @@ public class RobotSounds : MonoBehaviour {
 
 	IEnumerator BoobSquirt(){
 		//audio.clip = armStart;
-        audio.PlayOneShot(boobSquirtStart);
+		if(!audio.isPlaying)
+        	audio.PlayOneShot(boobSquirtStart);
         yield return new WaitForSeconds(audio.clip.length);
         audio.clip = boobSquirtLoop;
-        audio.Play();
+        if(!audio.isPlaying)
+       		audio.Play();
 	}
 }
