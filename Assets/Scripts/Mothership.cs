@@ -55,7 +55,7 @@ public class Mothership : MonoBehaviour
 		rs.ArmSound();
 	}
 	private void StopArm(){
-		rs.StopRobotSounds();
+		//rs.StopRobotSounds();
 	}
 
 }
