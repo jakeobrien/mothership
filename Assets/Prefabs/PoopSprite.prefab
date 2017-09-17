@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212881964679585658}
   - component: {fileID: 58699153899433624}
   - component: {fileID: 114122251391588224}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PoopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4275537633013018}
   - component: {fileID: 198529446391696932}
   - component: {fileID: 199879377148328644}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Fart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e8cba3e6292462abca986226411ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _durationToExplode: 15
+  _durationToExplode: 25
   _explosionPrefab: {fileID: 100004, guid: 8158e235a9f0889488510e0fcc69a5ba, type: 2}
 --- !u!198 &198529446391696932
 ParticleSystem:
@@ -3451,7 +3451,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 40
+  m_SortingOrder: 400
   m_Sprite: {fileID: 21300000, guid: d2dde925b8d35f747838c19f917f3b0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -16,9 +16,9 @@ public class Poop : MonoBehaviour
 	{
 		if (Time.time - _startTime > _durationToExplode)
 		{
+			if (PoopExploded != null) PoopExploded();
 			Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
 			Destroy(gameObject);
-			if (PoopExploded != null) PoopExploded();
 		}
 	}
 

@@ -19,7 +19,7 @@ public class ControlsManager : MonoBehaviour
 
 	[SerializeField]
 	private ControlMapping[] _mappings;
-
+	private List<int> _taken = new List<int>() { 0, 1, 2 };
 	private ControlMapping[] Mappings { get { return _mappings; } }
 
 	private void Awake()
@@ -44,15 +44,26 @@ public class ControlsManager : MonoBehaviour
 
 	public int GetNext(int current)
 	{
-		var next = current + 1;
-		if (next >= _mappings.Length) next = 0;
+		var next = current;
+		do
+		{
+			next++;
+			if (next >= _mappings.Length) next = 0;
+		} while (_taken.Contains(next));
+		if (_taken.Contains(current)) _taken.Remove(current);
+		_taken.Add(next);
 		return next;
 	}
 
 	public int GetPrev(int current)
 	{
-		var prev = current - 1;
-		if (prev < 0) prev = _mappings.Length - 1;
+		var prev = current;
+		do {
+			prev--;
+			if (prev < 0) prev = _mappings.Length - 1;
+		} while (_taken.Contains(prev));
+		if (_taken.Contains(current)) _taken.Remove(current);
+		_taken.Add(prev);
 		return prev;
 	}
 

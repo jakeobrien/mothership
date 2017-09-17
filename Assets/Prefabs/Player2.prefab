@@ -51,12 +51,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1eee0880b83435a99cc4cc02b9d1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increaseKeyCode: 100
   title: Player 2
   _controlsUI: {fileID: 0}
+  increaseKeyCode: 115
   decreaseKeyCode: 97
   buttonKeyCode: 304
   nextControlKeyCode: 119
-  prevControlKeyCode: 115
+  prevControlKeyCode: 114
   _axisSmooth: 0.1
   _axisDamp: 0.5

@@ -26,7 +26,7 @@ public class Game : MonoBehaviour
 
 	private void PoopExploded()
 	{
-		GameOver("you let your baby's poop explode");
+		StartCoroutine(GameOver("you let your baby's poop explode"));
 	}
 
 	private void BabyDied(string msg)
@@ -36,7 +36,7 @@ public class Game : MonoBehaviour
 
 	private IEnumerator GameOver(string msg)
 	{
-		if (_isGameOver) yield break;;
+		if (_isGameOver) yield break;
 		_isGameOver = true;
 		yield return new WaitForSeconds(babyDeadDelay);
 		gameOverMessage.gameObject.SetActive(true);

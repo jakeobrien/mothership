@@ -29,6 +29,7 @@ public class PlayerInput : MonoBehaviour
 
 	private void Start()
 	{
+		_controlsIndex = playerId;
 		player = ReInput.players.GetPlayer(playerId);
 		_controlsUI.playerText.text = title;
 		_controlsUI.controlsText.text = CurrentControlMapping.type.ToString();
