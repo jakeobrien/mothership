@@ -23,12 +23,8 @@ public class Mothership : MonoBehaviour
 		rb.velocity = input.Movement * movementSpeed * Vector2.right;
 		clawArm.input = input.ArmRotation;
 		tiddyArm.input = input.TiddyArmRotation;
-		if (input.SecreteMilk && !milkSplurt.isEmitting && milkTank > 0f)
-		{
-			milkSplurt.gameObject.SetActive(true);
-			milkSplurt.Play();
-		}
-		if ((!input.SecreteMilk || milkTank <= 0f) && milkSplurt.isEmitting) milkSplurt.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+		if (input.SecreteMilk && !milkSplurt.isEmitting && milkTank > 0f) SchtartSchplurtin();
+		if ((!input.SecreteMilk || milkTank <= 0f) && milkSplurt.isEmitting) SchtopSchplurtin();
 		if (input.SecreteMilk) milkTank -= milkDepleteRate * Time.deltaTime;
 		if (milkTank < 0f) milkTank = 0f;
 		magnet.isActive = input.OpenCloseClaw;
@@ -36,5 +32,15 @@ public class Mothership : MonoBehaviour
 		// bottomPinch.input = input.OpenCloseClaw;
 	}
 
+	private void SchtartSchplurtin()
+	{
+		milkSplurt.gameObject.SetActive(true);
+		milkSplurt.Play();
+	}
+
+	private void SchtopSchplurtin()
+	{
+		milkSplurt.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+	}
 
 }
