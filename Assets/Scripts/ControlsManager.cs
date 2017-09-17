@@ -8,17 +8,8 @@ public class ControlsManager : MonoBehaviour
 	private static ControlsManager _instance;
 	public static ControlsManager Instance { get { return _instance; } }
 
-	public enum ControlType
-	{
-		Movement,
-		RotateArm,
-		OpenCloseClaw,
-		SingLullaby,
-		SecreteMilk
-	}
-
 	[System.Serializable]
-	public class ControlMapping
+	private class ControlMapping
 	{
 		public ControlType type;
 		public Controls controls;
@@ -26,11 +17,27 @@ public class ControlsManager : MonoBehaviour
 
 	[SerializeField]
 	private ControlMapping[] _mappings;
-	public ControlMapping[] Mappings { get { return _mappings; } }
+
+	private ControlMapping[] Mappings { get { return _mappings; } }
 
 	private void Awake()
 	{
 		_instance = this;
+	}
+
+	public Controls GetControls(int index)
+	{
+		if (index < 0 || index >= _mappings.Length) return null;
+		return _mappings[index].controls;
+	}
+
+	public Controls GetControls(ControlType type)
+	{
+		foreach (var mapping in _mappings)
+		{
+			if (mapping.type == type) return mapping.controls;
+		}
+		return null;
 	}
 
 	public int GetNext(int current)

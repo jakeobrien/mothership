@@ -6,24 +6,19 @@ using UnityEngine;
 public class Controls
 {
 
-	public float changeRate;
-
-	private float _value;
-	public float Value { get { return _value; } }
-
-	public void Increase()
+	private float _axisValue;
+	public float AxisValue
 	{
-		_value = Mathf.Clamp(_value + changeRate, -1f, 1f);
+		get { return _axisValue; }
+		set { _axisValue = value; }
 	}
 
-	public void Decrease()
+	private bool _buttonPressed;
+	public bool ButtonPressed
 	{
-		_value = Mathf.Clamp(_value - changeRate, -1f, 1f);
+		get { return _buttonPressed; }
+		set { _buttonPressed = value; }
 	}
 
-	public void ButtonPress()
-	{
-
-	}
 
 }

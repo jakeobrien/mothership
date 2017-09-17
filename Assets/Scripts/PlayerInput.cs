@@ -6,11 +6,8 @@ using System;
 public class PlayerInput : MonoBehaviour
 {
 
-	public Action AxisUp;
-	public Action AxisDown;
-	public Action ButtonPress;
-	public Action NextControl;
-	public Action PrevControl;
+	private int _controlsIndex;
+	private Controls CurrentControls { get { return ControlsManager.Instance.GetControls(_controlsIndex); } }
 
 	public KeyCode increaseKeyCode;
 	public KeyCode decreaseKeyCode;
@@ -20,26 +17,43 @@ public class PlayerInput : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(increaseKeyCode))
+		if (Input.GetKey(increaseKeyCode))
 		{
-			if (AxisUp != null) AxisUp();
+			if (CurrentControls != null) CurrentControls.AxisValue = 1f;
 		}
-		if (Input.GetKeyDown(decreaseKeyCode))
+		else if (Input.GetKeyDown(decreaseKeyCode))
 		{
-			if (AxisDown != null) AxisDown();
+			if (CurrentControls != null) CurrentControls.AxisValue = 0f;
 		}
 		if (Input.GetKeyDown(buttonKeyCode))
 		{
-			if (ButtonPress != null) ButtonPress();
+			if (CurrentControls != null) CurrentControls.ButtonPressed = true;
+		}
+		else if (Input.GetKeyUp(buttonKeyCode))
+		{
+			if (CurrentControls != null) CurrentControls.ButtonPressed = false;
 		}
 		if (Input.GetKeyDown(nextControlKeyCode))
 		{
-			if (NextControl != null) NextControl();
+			NextControl();
 		}
 		if (Input.GetKeyDown(prevControlKeyCode))
 		{
-			if (PrevControl != null) PrevControl();
+			PrevControl();
 		}
 	}
 
+	private void NextControl()
+	{
+		CurrentControls.AxisValue = 0f;
+		CurrentControls.ButtonPressed = false;
+		_controlsIndex = ControlsManager.Instance.GetNext(_controlsIndex);
+	}
+
+	private void PrevControl()
+	{
+		CurrentControls.AxisValue = 0f;
+		CurrentControls.ButtonPressed = false;
+		_controlsIndex = ControlsManager.Instance.GetPrev(_controlsIndex);
+	}
 }
