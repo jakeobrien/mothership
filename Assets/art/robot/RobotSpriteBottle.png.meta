@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e005a86448b5d0a45b17d296d0782e29
-timeCreated: 1505666126
+timeCreated: 1505669051
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,8 @@ TextureImporter:
     21300010: RobotSpriteBottle_5
     21300012: RobotSpriteBottle_6
     21300014: RobotSpriteBottle_7
+    21300016: RobotSpriteBottle_8
+    21300018: RobotSpriteBottle_9
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -91,7 +93,7 @@ TextureImporter:
         width: 816
         height: 2356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -105,7 +107,7 @@ TextureImporter:
         width: 700
         height: 560
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -119,7 +121,7 @@ TextureImporter:
         width: 267
         height: 883
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,7 +135,7 @@ TextureImporter:
         width: 266
         height: 878
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +149,7 @@ TextureImporter:
         width: 524
         height: 956
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,12 +158,12 @@ TextureImporter:
       name: RobotSpriteBottle_5
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1546
         y: 1381
-        width: 800
+        width: 654
         height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,7 +177,7 @@ TextureImporter:
         width: 841
         height: 298
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,6 +190,34 @@ TextureImporter:
         y: 697
         width: 284
         height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotSpriteBottle_8
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1727
+        width: 160
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotSpriteBottle_9
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1376
+        width: 146
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
