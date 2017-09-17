@@ -2239,6 +2239,21 @@ Prefab:
       propertyPath: grumpySlider
       value: 
       objectReference: {fileID: 279740520}
+    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
+        type: 2}
+      propertyPath: _needs.Array.data[0].vital.speedOfDepletion
+      value: 0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
+        type: 2}
+      propertyPath: _needs.Array.data[1].vital.speedOfDepletion
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
+        type: 2}
+      propertyPath: _needs.Array.data[2].vital.speedOfDepletion
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46eb677efd8f44bc196c27d98b4322e0, type: 2}
   m_IsPrefabParent: 0
