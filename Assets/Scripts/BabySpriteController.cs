@@ -1,36 +1,82 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BabySpriteController : MonoBehaviour {
-    public Sprite[] babySprites;
+[Flags]
+public enum States { feeding = 1 << 0, hungry = 1 << 1, normal = 1 << 2, pooping = 1 << 3, sleeping = 1 << 4 , sleepy = 1 << 5 }
 
-    private SpriteRenderer myRenderer;
+public class BabySpriteController : MonoBehaviour {
+    public Sprite[] faceSprites, bodySprites;
+
+    public GameObject faceObject, bodyObject;
+
+    private States currentState;
+
+    private SpriteRenderer faceRenderer, bodyRenderer;
     private BabyBehavior myBehavior;
     private BabyBehavior.Need[] myNeeds;
+    private bool inSession;
+
     public void Start() {
-        myRenderer = GetComponent<SpriteRenderer>();
+        faceRenderer = faceObject.GetComponent<SpriteRenderer>();
+        bodyRenderer = bodyObject.GetComponent<SpriteRenderer>();
         myBehavior = GetComponent<BabyBehavior>();
         myNeeds = myBehavior._needs;
-        SetSpriteToRender(0);
+        inSession = true;
+        StartCoroutine(FaceSession());
     }
 
-    private void Update() {
-        foreach (BabyBehavior.Need need in myNeeds) {
-            if (need.vital.value <= 0.5f) {
+    private IEnumerator FaceSession() {
+        while (inSession) {
+            foreach (BabyBehavior.Need need in myNeeds) {
                 switch (need.type) {
-                    case NeedType.food: { }
+                    case NeedType.food: { if (need.vital.value < 0.5f) { currentState = currentState | States.hungry; } else { currentState = currentState ^ States.hungry; } } 
                         break;
-                    case NeedType.sleep: { }
-                        break;
-                    case NeedType.poop: { }
+                    case NeedType.sleep: { if (need.vital.value > 0.75f) { currentState = currentState | States.sleeping; currentState = currentState ^ States.sleepy; } else if (need.vital.value < 0.35f) { currentState = currentState | States.sleepy; currentState = currentState ^ States.sleeping; } else { currentState = currentState ^ States.sleeping; currentState = currentState ^ States.sleepy; } }
                         break;
                 }
-            } else { }
+            }
+            DetermineFace();
+            yield return null;
         }
+    } private void DetermineFace() {
+        if((currentState & States.pooping) != 0) {
+
+        } else if((currentState & States.sleepy) != 0) {
+
+        } else if ((currentState & States.hungry) != 0) {
+
+        } else if((currentState & States.))
     }
 
-    private void SetSpriteToRender(int that) {
-        //myRenderer.enabled = false;
+    public void ShowBabyDead() {
+        inSession = false;
+        faceRenderer.sprite = faceSprites[0];
+    }
+    public void MakePoopFace() {
+        currentState = currentState | States.pooping;
+        Invoke("EndPoopFace", 2f);
+    } private void EndPoopFace() {
+        currentState = currentState ^ States.pooping;
+    }
+
+    public void ShowFeedingFace() {
+        currentState = currentState | States.feeding;
+    } public void EndFeedingFace() {
+        currentState = currentState | States.feeding;
+    }
+
+    public void ImHeld() {
+        bodyRenderer.sprite = bodySprites[1];
+    } public void ImNotHeld() {
+        bodyRenderer.sprite = bodySprites[0];
+    }
+
+    private void SetFaceToRender(int that) {
+        faceRenderer.sprite = faceSprites[that];
+    }
+    private void SetBodyToRender(int that) {
+        faceRenderer.sprite = faceSprites[that];
     }
 }

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public enum NeedType { food = 1, sleep = 2, poop = 4,}
 
 public class BabyBehavior : MonoBehaviour {
+    private BabySpriteController spriteController;
 
     public GameObject gameOverPanel;
     public float gameOverDelay = 1f;
@@ -27,6 +28,7 @@ public class BabyBehavior : MonoBehaviour {
 
     private void Start() {
         //gameOverPanel.SetActive(false);
+        spriteController = GetComponent<BabySpriteController>();
         foreach(Need need in _needs) {
             need.vital.value = 1f;
         }
@@ -57,6 +59,7 @@ public class BabyBehavior : MonoBehaviour {
     }
 
     void BabyFail() {
+        spriteController.ShowBabyDead();
         //gameOverPanel.SetActive(true);
         print("GameOver!");
     }
