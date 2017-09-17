@@ -7,11 +7,12 @@ public class MothershipInput : MonoBehaviour
 
 	private Controls _movement;
 	private Controls _armRotation;
+	private Controls _tiddyArmRotation;
 	private Controls _openCloseClaw;
 	private Controls _secreteMilk;
 	private Controls _singLullaby;
 
-	public float MovementInput
+	public float Movement
 	{
 		get { return _movement.AxisValue; }
 	}
@@ -19,6 +20,11 @@ public class MothershipInput : MonoBehaviour
 	public float ArmRotation
 	{
 		get { return _armRotation.AxisValue; }
+	}
+
+	public float TiddyArmRotation
+	{
+		get { return _tiddyArmRotation.AxisValue; }
 	}
 
 	public float OpenCloseClaw
@@ -41,6 +47,7 @@ public class MothershipInput : MonoBehaviour
 		var controls = ControlsManager.Instance;
 		_movement = controls.GetControls(ControlType.Movement);
 		_armRotation = controls.GetControls(ControlType.RotateArm);
+		_tiddyArmRotation = controls.GetControls(ControlType.RotateTiddyArm);
 		_openCloseClaw = controls.GetControls(ControlType.OpenCloseClaw);
 		_secreteMilk = controls.GetControls(ControlType.SecreteMilk);
 		_singLullaby = controls.GetControls(ControlType.SingLullaby);
