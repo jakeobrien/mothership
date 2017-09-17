@@ -4,5 +4,6 @@
 	RotateArm,
 	OpenCloseClaw,
 	SingLullaby,
+	RotateTiddyArm,
 	SecreteMilk
 }
