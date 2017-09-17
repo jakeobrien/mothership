@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4205982951305924}
   - component: {fileID: 212881964679585658}
   - component: {fileID: 58699153899433624}
+  - component: {fileID: 114122251391588224}
   m_Layer: 0
   m_Name: PoopSprite
   m_TagString: Untagged
@@ -87,6 +88,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.23}
   serializedVersion: 2
   m_Radius: 0.6
+--- !u!114 &114122251391588224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1248021834319126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8cba3e6292462abca986226411ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _durationToExplode: 15
+  _explosionPrefab: {fileID: 100004, guid: 8158e235a9f0889488510e0fcc69a5ba, type: 2}
 --- !u!198 &198529446391696932
 ParticleSystem:
   m_ObjectHideFlags: 1
