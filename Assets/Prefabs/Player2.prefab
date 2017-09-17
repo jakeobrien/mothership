@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseKeyCode: 100
-  decreaseKeyCode: 119
+  decreaseKeyCode: 97
   buttonKeyCode: 304
   nextControlKeyCode: 119
-  prevControlKeyCode: 97
+  prevControlKeyCode: 115
   _axisSmooth: 0.1
   _axisDamp: 0.5
