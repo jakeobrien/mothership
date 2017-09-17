@@ -12,7 +12,7 @@ public class Magnet : MonoBehaviour {
 		if (_target == null) return;
 		if (!isActive)
 		{
-            var babeh = _target.GetComponent<BabySpriteController>();
+            var babeh = _target.gameObject.GetComponent<BabySpriteController>();
             if (babeh != null) {
                 babeh.ImNotHeld();
             }
@@ -28,7 +28,7 @@ public class Magnet : MonoBehaviour {
 		if (!isActive) return;
         if (!_environmentLayers.ContainsLayer(coll.gameObject.layer)) return;
 		_target = coll.transform;
-        var babeh = _target.GetComponent<BabySpriteController>();
+        var babeh = _target.gameObject.GetComponent<BabySpriteController>();
         if (babeh!=null) {
             babeh.ImHeld();
         }
