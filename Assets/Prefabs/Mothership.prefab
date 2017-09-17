@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4746526290258002}
   - component: {fileID: 212942321613724226}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 50576161918404186}
   - component: {fileID: 61438805069295080}
   - component: {fileID: 255532668820022376}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: L_ForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 50476522344914736}
   - component: {fileID: 61598421206240664}
   - component: {fileID: 255542661552123558}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: R_ForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4327495502114100}
   - component: {fileID: 212325869564717958}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 114275531728648876}
   - component: {fileID: 233971519620078076}
   - component: {fileID: 60494180657060970}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: R_Bicept
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 233125644837393940}
   - component: {fileID: 114992473675129244}
   - component: {fileID: 60297801454921994}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: TopPincer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 4225948155820984}
   - component: {fileID: 212714415793511018}
   - component: {fileID: 50409044212559020}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4085794437050314}
   - component: {fileID: 212406392730007508}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 212002460033941818}
   - component: {fileID: 114879119130494394}
   - component: {fileID: 60442711623505702}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magnet sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 114362390221260158}
   - component: {fileID: 50595098820460770}
   - component: {fileID: 233708837519898286}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magnet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4965827564488974}
   - component: {fileID: 212440199255682718}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_LowLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 212987565974891630}
   - component: {fileID: 50133113895462986}
   - component: {fileID: 233092224130752986}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Tiddy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4566105530530716}
   - component: {fileID: 212467343615402158}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 114595120409971134}
   - component: {fileID: 60359676683619598}
   - component: {fileID: 233961768425003310}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: L_Bicept
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4646132211682692}
   - component: {fileID: 212309536034774728}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4449832827277360}
   - component: {fileID: 212391840890115676}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_LowLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 4671216288187440}
   - component: {fileID: 198374997690794408}
   - component: {fileID: 199758422557951580}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Milk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 233944648578130738}
   - component: {fileID: 114884907157555752}
   - component: {fileID: 60099592221272198}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: TopPincer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 4841312283281100}
   - component: {fileID: 114555280785407750}
   - component: {fileID: 114299609200977112}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mothership
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,8 +356,25 @@ GameObject:
   - component: {fileID: 4474173281186342}
   - component: {fileID: 198009392037422390}
   - component: {fileID: 199133916874607100}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Splatter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1988759210374316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4554226798557882}
+  - component: {fileID: 50153698711110768}
+  - component: {fileID: 233058126038511806}
+  m_Layer: 13
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,7 +391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225948155820984}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4168626765078328
 Transform:
@@ -400,7 +417,6 @@ Transform:
   m_LocalPosition: {x: 2.181, y: 2.338, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4327495502114100}
   - {fileID: 4566105530530716}
   - {fileID: 4746526290258002}
   - {fileID: 4965827564488974}
@@ -430,10 +446,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1389331012156878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006000042, y: 4.721999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999851, y: 0.9999848, z: 0.9999848}
   m_Children: []
-  m_Father: {fileID: 4225948155820984}
+  m_Father: {fileID: 4554226798557882}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4402761222056360
@@ -461,7 +477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225948155820984}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4474173281186342
 Transform:
@@ -476,6 +492,20 @@ Transform:
   m_Father: {fileID: 4671216288187440}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!4 &4554226798557882
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988759210374316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.175, y: 9.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4327495502114100}
+  m_Father: {fileID: 4841312283281100}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4566105530530716
 Transform:
   m_ObjectHideFlags: 1
@@ -487,7 +517,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225948155820984}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4575936302345678
 Transform:
@@ -513,7 +543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225948155820984}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4654471742987426
 Transform:
@@ -553,7 +583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225948155820984}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4764480415346304
 Transform:
@@ -588,7 +618,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1916931566970966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.72, z: 0}
+  m_LocalPosition: {x: -2.93, y: -3.82, z: -0.5}
   m_LocalScale: {x: 0.29490438, y: 0.29490444, z: 0.29490444}
   m_Children:
   - {fileID: 4248237633979946}
@@ -600,6 +630,7 @@ Transform:
   - {fileID: 4764480415346304}
   - {fileID: 4225948155820984}
   - {fileID: 4402761222056360}
+  - {fileID: 4554226798557882}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -627,7 +658,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4225948155820984}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4996854574815492
 Transform:
@@ -662,6 +693,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!50 &50153698711110768
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988759210374316}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!50 &50340172024647820
 Rigidbody2D:
   serializedVersion: 4
@@ -675,7 +726,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.4
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 20
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -793,9 +844,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.4
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 20
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1192,7 +1243,7 @@ MonoBehaviour:
   isActive: 0
   _environmentLayers:
     serializedVersion: 2
-    m_Bits: 6144
+    m_Bits: 4096
 --- !u!114 &114555280785407750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8566,6 +8617,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!233 &233058126038511806
+HingeJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988759210374316}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 50409044212559020}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: -2.69}
+  m_ConnectedAnchor: {x: -0.005999586, y: 4.841999}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
 --- !u!233 &233092224130752986
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -8580,7 +8654,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.96, y: 0}
-  m_ConnectedAnchor: {x: -3.3900003, y: -0.8100002}
+  m_ConnectedAnchor: {x: -3.3899999, y: -0.8100006}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -8626,7 +8700,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1.099396, y: -0.69883114}
-  m_ConnectedAnchor: {x: 2.7215097, y: -0.10292248}
+  m_ConnectedAnchor: {x: 2.7215102, y: -0.10292268}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -8672,7 +8746,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -2.54, y: 0.09}
-  m_ConnectedAnchor: {x: 1.9890003, y: 2.032}
+  m_ConnectedAnchor: {x: 1.9890007, y: 2.0319998}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -8695,7 +8769,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 2.47, y: 0}
-  m_ConnectedAnchor: {x: -2.261, y: 2.0019999}
+  m_ConnectedAnchor: {x: -2.261, y: 2.0019996}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
