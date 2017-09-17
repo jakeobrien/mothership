@@ -12548,6 +12548,7 @@ GameObject:
   - component: {fileID: 502947143}
   - component: {fileID: 502947142}
   - component: {fileID: 502947144}
+  - component: {fileID: 502947145}
   m_Layer: 0
   m_Name: Mothership
   m_TagString: Untagged
@@ -12608,6 +12609,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c219a11d5102427493f3757a38fa8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &502947145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502947141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 381371c7689b14f1e943dd8011e3384a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mappings:
+  - type: 0
+  - type: 1
+  - type: 2
+  - type: 3
+  - type: 4
 --- !u!1 &503518757
 GameObject:
   m_ObjectHideFlags: 0
@@ -22954,7 +22972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &924967839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29445,8 +29463,8 @@ GameObject:
   - component: {fileID: 1206722312}
   - component: {fileID: 1206722316}
   - component: {fileID: 1206722315}
-  - component: {fileID: 1206722314}
   - component: {fileID: 1206722317}
+  - component: {fileID: 1206722314}
   m_Layer: 10
   m_Name: BottomPincer
   m_TagString: Untagged
@@ -29517,10 +29535,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1206722311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 554435d99676e054aa1e32fd24784499, type: 3}
+  m_Script: {fileID: 11500000, guid: 345ca6288714718488a17106deb058c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: 0.1
+  torque: 2
   movement: 0
 --- !u!233 &1206722315
 HingeJoint2D:
@@ -32818,6 +32836,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1383945703}
   m_Mesh: {fileID: 4300002, guid: ba26fe93c40a8f64ab304dcccb6e473d, type: 3}
+--- !u!1001 &1385396022
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661097699343676, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 772e6e3f583fdce438bb8a773dae1948, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1392459824
 GameObject:
   m_ObjectHideFlags: 0
@@ -36031,7 +36091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1569446796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48509,8 +48569,8 @@ GameObject:
   - component: {fileID: 2061432903}
   - component: {fileID: 2061432902}
   - component: {fileID: 2061432901}
-  - component: {fileID: 2061432905}
   - component: {fileID: 2061432906}
+  - component: {fileID: 2061432905}
   m_Layer: 10
   m_Name: TopPincer
   m_TagString: Untagged
@@ -48624,10 +48684,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2061432900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 554435d99676e054aa1e32fd24784499, type: 3}
+  m_Script: {fileID: 11500000, guid: 345ca6288714718488a17106deb058c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: -0.1
+  torque: 2
   movement: 0
 --- !u!60 &2061432906
 PolygonCollider2D:

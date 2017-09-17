@@ -7,8 +7,10 @@ public class RotateAround : MonoBehaviour {
 	private Sprite sprite;
 	public float torque = 2f;
 	public float movement;
+	private MothershipInput _msInput;
 	// Use this for initialization
 	void Start () {
+		_msInput = GetComponentInParent<MothershipInput>();
 		rb = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>().sprite;
 		Debug.Log(sprite.pivot);
@@ -17,7 +19,7 @@ public class RotateAround : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		movement = Input.GetAxis("Horizontal") * torque;
+		movement = _msInput.ArmRotation * torque;
 		rb.AddTorque(movement,ForceMode2D.Impulse);
 	}
 }
