@@ -16,7 +16,7 @@ public class BabySpriteController : MonoBehaviour {
     private SpriteRenderer faceRenderer, bodyRenderer;
     private BabyBehavior myBehavior;
     private BabyBehavior.Need[] myNeeds;
-    private bool inSession;
+    private bool inSession, inDistress, isPooping;
 
     public void Start() {
         faceRenderer = faceObject.GetComponent<SpriteRenderer>();
@@ -30,26 +30,18 @@ public class BabySpriteController : MonoBehaviour {
     private IEnumerator FaceSession() {
         while (inSession) {
             foreach (BabyBehavior.Need need in myNeeds) {
-                switch (need.type) {
-                    case NeedType.food: { if (need.vital.Value < 0.5f) { currentState = currentState | States.hungry; } else { currentState = currentState ^ States.hungry; } } 
-                        break;
-                    case NeedType.sleep: { if (need.vital.Value > 0.75f) { currentState = currentState | States.sleeping; currentState = currentState ^ States.sleepy; } else if (need.vital.Value < 0.35f) { currentState = currentState | States.sleepy; currentState = currentState ^ States.sleeping; } else { currentState = currentState ^ States.sleeping; currentState = currentState ^ States.sleepy; } }
-                        break;
+                if (need.type != NeedType.poop) {
+                    inDistress = (need.vital.Value <= 0.5f);
+                    if (inDistress) { break; }
                 }
             }
-            DetermineFace();
+            if (!isPooping) {
+                DetermineFace(inDistress);
+            }
             yield return null;
         }
-    } private void DetermineFace() {
-        if ((currentState & States.pooping) != 0) {
-            SetFaceToRender(4);
-        } else if ((currentState & States.sleepy) != 0) {
-            SetFaceToRender(9);
-        } else if ((currentState & States.hungry) != 0) {
-            SetFaceToRender(2);
-        } else {
-            SetFaceToRender(1);
-        }
+    } private void DetermineFace(bool ans) {
+        if (ans) { SetFaceToRender(7); } else { SetFaceToRender(1); }
     }
 
     public void ShowBabyDead() {
@@ -57,16 +49,15 @@ public class BabySpriteController : MonoBehaviour {
         faceRenderer.sprite = faceSprites[0];
     }
     public void MakePoopFace() {
-        currentState = currentState | States.pooping;
+        isPooping = true;
+        faceRenderer.sprite = faceSprites[8];
         Invoke("EndPoopFace", 2f);
     } private void EndPoopFace() {
-        currentState = currentState ^ States.pooping;
+        isPooping = false;
     }
 
     public void ShowFeedingFace() {
-        currentState = currentState | States.feeding;
     } public void EndFeedingFace() {
-        currentState = currentState | States.feeding;
     }
 
     public void ImHeld() {

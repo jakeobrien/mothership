@@ -63,7 +63,8 @@ public class BabyBehavior : MonoBehaviour {
 	}
 
     private void PoopTrigger() {
-        //poop.gameObject.SetActive(true);
+        spriteController.MakePoopFace();
+        poop.gameObject.SetActive(true);
         poop.Play();
         //bs.Poop();
     }
