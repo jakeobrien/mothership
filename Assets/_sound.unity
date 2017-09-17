@@ -162,6 +162,23 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 819594158}
   m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &316132497 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1396253081535074, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+    type: 2}
+  m_PrefabInternal: {fileID: 1925478359}
+--- !u!114 &316132498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316132497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d043043e6930d46fd807b8b56623af3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
 --- !u!1 &351968653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,86 +2183,18 @@ MonoBehaviour:
   boobSquirtLoop: {fileID: 8300000, guid: 5655b61de920bc749925a2d5d603a903, type: 3}
   lullaby: {fileID: 8300000, guid: 67231c682b67de142a31cd81fa116238, type: 3}
   walk: {fileID: 8300000, guid: da342719656540548951834fd95abe91, type: 3}
---- !u!82 &1789238513
-AudioSource:
+--- !u!114 &1789238517
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1789238511}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d043043e6930d46fd807b8b56623af3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
 --- !u!114 &1873481597 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114234995846174394, guid: 533eacd6e2c198348b907fa26f09f930,
@@ -2469,7 +2418,48 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: feeding
+      value: 
+      objectReference: {fileID: 8300000, guid: f67ce89dd003cd148bc12a5bae18e9e8, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: hungry
+      value: 
+      objectReference: {fileID: 8300000, guid: a1ea5b0b7ebc2b440b793054bd089b26, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: cooing
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a2269d0b166f1c40aea8763ad62edb2, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: poop
+      value: 
+      objectReference: {fileID: 8300000, guid: 2681b2fde0ad9fb488f55fe7407eca27, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: sleep
+      value: 
+      objectReference: {fileID: 8300000, guid: 78921a4fd0317c341ad2f8e41d9cc27f, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: sleepAngry
+      value: 
+      objectReference: {fileID: 8300000, guid: 7579288263186ba4da86f09f3354a98d, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: sleepPreAngry
+      value: 
+      objectReference: {fileID: 8300000, guid: a2f337bc1ef0d2b40831e07927b71f6f, type: 3}
+    - target: {fileID: 114618442646577464, guid: cefb91e0065cd4c0cb8a0964ae7db729,
+        type: 2}
+      propertyPath: upset
+      value: 
+      objectReference: {fileID: 8300000, guid: 73d3812e21a807441a8c321ff367c67b, type: 3}
+    m_RemovedComponents:
+    - {fileID: 82156292749877926, guid: cefb91e0065cd4c0cb8a0964ae7db729, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cefb91e0065cd4c0cb8a0964ae7db729, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1925478360 stripped

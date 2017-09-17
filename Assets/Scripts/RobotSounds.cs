@@ -13,11 +13,13 @@ public class RobotSounds : MonoBehaviour {
 	public AudioClip boobSquirtLoop;
 	public AudioClip lullaby;
 	public AudioClip walk;
+	private AudioPool aPool;
 	private AudioSource audio;
 	// Use this for initialization
 	void Start () {
 		_msInput = GetComponentInParent<MothershipInput>();
-		audio = GetComponent<AudioSource>();
+		aPool = GetComponent<AudioPool>();
+		audio = aPool.GetAudioSourceFromPool();
 		audio.loop = true;
 	}
 
@@ -44,8 +46,6 @@ public class RobotSounds : MonoBehaviour {
 
 	public void BoobSquirt(){
 		audio.clip = boobSquirtStart;
-		Debug.Log("fuck this game");
-		if(!audio.isPlaying)
         	audio.Play();
 	}
 
