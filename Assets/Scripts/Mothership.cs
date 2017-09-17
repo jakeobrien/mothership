@@ -53,7 +53,6 @@ public class Mothership : MonoBehaviour
 	}
 
 	private void StartArm(){
-		Debug.Log("fucko");
 		rs.ArmSound();
 	}
 	private void StopArm(){

@@ -5,7 +5,6 @@ using UnityEngine;
 public class PoopReclaimer : MonoBehaviour
 {
 
-
 	private void OnTriggerStay2D(Collider2D coll)
 	{
 		var poop = coll.GetComponent<Poop>();
