@@ -1960,6 +1960,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
         type: 2}
+      propertyPath: grumpySlider
+      value: 
+      objectReference: {fileID: 279740520}
+    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
+        type: 2}
       propertyPath: _needs.Array.data[0].vital.mySlider
       value: 
       objectReference: {fileID: 1926390536}
@@ -1973,29 +1978,15 @@ Prefab:
       propertyPath: _needs.Array.data[2].vital.mySlider
       value: 
       objectReference: {fileID: 1070259678}
-    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
-        type: 2}
-      propertyPath: grumpySlider
-      value: 
-      objectReference: {fileID: 279740520}
-    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
-        type: 2}
-      propertyPath: _needs.Array.data[0].vital.speedOfDepletion
-      value: 0.033
-      objectReference: {fileID: 0}
-    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
-        type: 2}
-      propertyPath: _needs.Array.data[1].vital.speedOfDepletion
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
-        type: 2}
-      propertyPath: _needs.Array.data[2].vital.speedOfDepletion
-      value: 0.08
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46eb677efd8f44bc196c27d98b4322e0, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1321042169 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114285926670623860, guid: 46eb677efd8f44bc196c27d98b4322e0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1321042168}
+  m_Script: {fileID: 11500000, guid: 8dca88c13de81b741a6061075c954bfd, type: 3}
 --- !u!1001 &1344238036
 Prefab:
   m_ObjectHideFlags: 0
@@ -2332,6 +2323,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114299609200977112, guid: 11da85c0e96b0442cb1927d916ca92dd,
+        type: 2}
+      propertyPath: baby
+      value: 
+      objectReference: {fileID: 1321042169}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11da85c0e96b0442cb1927d916ca92dd, type: 2}
   m_IsPrefabParent: 0

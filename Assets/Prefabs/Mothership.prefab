@@ -1490,6 +1490,7 @@ MonoBehaviour:
   audio: {fileID: 82735047282858632}
   armSource: {fileID: 82296246520316080}
   boobSource: {fileID: 82222303600948210}
+  lullabySource: {fileID: 0}
 --- !u!114 &114275531728648876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1519,7 +1520,7 @@ MonoBehaviour:
   clawArm: {fileID: 114595120409971134}
   tiddyArm: {fileID: 114275531728648876}
   milkSplurt: {fileID: 198374997690794408}
-  cooDistance: 0
+  cooDistance: 5
   rb: {fileID: 50409044212559020}
   baby: {fileID: 0}
   input: {fileID: 114555280785407750}
@@ -1527,7 +1528,7 @@ MonoBehaviour:
   bottomPinch: {fileID: 114884907157555752}
   magnet: {fileID: 114362390221260158}
   milkTank: 1
-  milkDepleteRate: 0
+  milkDepleteRate: 0.3
   rs: {fileID: 114167798973375448}
 --- !u!114 &114362390221260158
 MonoBehaviour:
@@ -1544,42 +1545,6 @@ MonoBehaviour:
   _environmentLayers:
     serializedVersion: 2
     m_Bits: 20480
---- !u!114 &114432848007298890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1916931566970966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2f86b0041dc384b8125398f630a089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  armStart: {fileID: 8300000, guid: 4f59b0f8b9a7f7144ae79b0d727c2b77, type: 3}
-  armLoop: {fileID: 8300000, guid: 4f59b0f8b9a7f7144ae79b0d727c2b77, type: 3}
-  clampHard: {fileID: 8300000, guid: 098d8da81f2f0f648927e14e9ae0448b, type: 3}
-  clampSoft: {fileID: 8300000, guid: 4638aad8d23c42c4681b2d39153a2c49, type: 3}
-  boobRefill: {fileID: 8300000, guid: cc85c6ec5f1d6554f9afa97656fd5b19, type: 3}
-  boobSquirtStart: {fileID: 8300000, guid: e91ec7d4d1eb43b488a76872fc7c0b60, type: 3}
-  boobSquirtLoop: {fileID: 8300000, guid: 5655b61de920bc749925a2d5d603a903, type: 3}
-  lullaby: {fileID: 8300000, guid: 67231c682b67de142a31cd81fa116238, type: 3}
-  walk: {fileID: 8300000, guid: da342719656540548951834fd95abe91, type: 3}
-  audio: {fileID: 82984264838122096}
-  armSource: {fileID: 82032920346182194}
-  boobSource: {fileID: 82835126341967704}
---- !u!114 &114502545322077090
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1475328932255054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af5eea9269fe9408fa86b2cda4a7a64a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mothership: {fileID: 114299609200977112}
-  milkRefillRate: 0.1
 --- !u!114 &114555280785407750
 MonoBehaviour:
   m_ObjectHideFlags: 1
