@@ -19,7 +19,7 @@ public class RobotSounds : MonoBehaviour {
 		_msInput = GetComponentInParent<MothershipInput>();
 		audio = GetComponent<AudioSource>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if(_msInput.ArmRotation != 0){
@@ -29,7 +29,7 @@ public class RobotSounds : MonoBehaviour {
 		if(_msInput.SecreteMilk){
 			StartCoroutine(BoobSquirt());
 		}
-		if(_msInput.MovementInput != 0){
+		if(_msInput.Movement != 0){
 			audio.clip = walk;
 			audio.loop = true;
 			audio.Play();
