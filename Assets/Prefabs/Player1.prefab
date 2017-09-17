@@ -51,6 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1eee0880b83435a99cc4cc02b9d1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Player 1
+  _controlsUI: {fileID: 0}
   increaseKeyCode: 275
   decreaseKeyCode: 276
   buttonKeyCode: 32

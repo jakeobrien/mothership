@@ -52,6 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseKeyCode: 100
+  title: Player 2
+  _controlsUI: {fileID: 0}
   decreaseKeyCode: 97
   buttonKeyCode: 304
   nextControlKeyCode: 119

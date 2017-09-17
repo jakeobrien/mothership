@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[System.Serializable]
+public class ControlMapping
+{
+	public ControlType type;
+	public Controls controls;
+}
+
+
 public class ControlsManager : MonoBehaviour
 {
 
 	private static ControlsManager _instance;
 	public static ControlsManager Instance { get { return _instance; } }
-
-	[System.Serializable]
-	private class ControlMapping
-	{
-		public ControlType type;
-		public Controls controls;
-	}
 
 	[SerializeField]
 	private ControlMapping[] _mappings;
@@ -25,10 +27,10 @@ public class ControlsManager : MonoBehaviour
 		_instance = this;
 	}
 
-	public Controls GetControls(int index)
+	public ControlMapping GetControls(int index)
 	{
 		if (index < 0 || index >= _mappings.Length) return null;
-		return _mappings[index].controls;
+		return _mappings[index];
 	}
 
 	public Controls GetControls(ControlType type)
