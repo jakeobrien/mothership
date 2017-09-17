@@ -10,7 +10,7 @@ public class Magnet : MonoBehaviour {
 
 	void Update () {
 		if (_target == null) return;
-		if (isActive)
+		if (!isActive)
 		{
 			_target = null;
 			return;
@@ -18,7 +18,7 @@ public class Magnet : MonoBehaviour {
         _target.position = this.transform.position;
 	}
 
-	private void OnCollisionEnter2D(Collision2D coll)
+	private void OnTriggerEnter2D(Collider2D coll)
     {
 		if (!isActive) return;
         if (!_environmentLayers.ContainsLayer(coll.gameObject.layer)) return;

@@ -13,6 +13,7 @@ public class Mothership : MonoBehaviour
 	public MothershipInput input;
 	public Pinch topPinch;
 	public Pinch bottomPinch;
+	public Magnet magnet;
 
 	private void Update()
 	{
@@ -21,8 +22,9 @@ public class Mothership : MonoBehaviour
 		tiddyArm.input = input.TiddyArmRotation;
 		if (input.SecreteMilk && !milkSplurt.isEmitting) milkSplurt.Play();
 		if (!input.SecreteMilk && milkSplurt.isEmitting) milkSplurt.Stop(false, ParticleSystemStopBehavior.StopEmitting);
-		topPinch.input = input.OpenCloseClaw;
-		bottomPinch.input = input.OpenCloseClaw;
+		magnet.isActive = input.OpenCloseClaw;
+		// topPinch.input = input.OpenCloseClaw;
+		// bottomPinch.input = input.OpenCloseClaw;
 	}
 
 

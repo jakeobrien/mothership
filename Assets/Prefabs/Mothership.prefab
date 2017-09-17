@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 114879119130494394}
   - component: {fileID: 60442711623505702}
   m_Layer: 0
-  m_Name: Magnet (1)
+  m_Name: Magnet sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,7 +978,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1030,7 +1030,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1175,6 +1175,7 @@ MonoBehaviour:
   input: {fileID: 114555280785407750}
   topPinch: {fileID: 114992473675129244}
   bottomPinch: {fileID: 114884907157555752}
+  magnet: {fileID: 114362390221260158}
 --- !u!114 &114362390221260158
 MonoBehaviour:
   m_ObjectHideFlags: 1
