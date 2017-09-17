@@ -13,17 +13,17 @@ public class BabyBehavior : MonoBehaviour {
     public float gameOverDelay = 1f;
 
     [System.Serializable]
-    private class Need
+    public class Need
     {
         public NeedType type;
         public Vital vital;
     }
 
-    [SerializeField]
-    private Need[] _needs;
-
     public Slider grumpySlider;
     public float grumpySliderDecrementRate;
+
+    [SerializeField]
+    public Need[] _needs;
 
     private void Start() {
         //gameOverPanel.SetActive(false);
@@ -40,13 +40,16 @@ public class BabyBehavior : MonoBehaviour {
             foreach (Need need in _needs) {
                 need.vital.value -= need.vital.speedOfDepletion * Time.deltaTime;
                 need.vital.mySlider.value = need.vital.value;
-                if (need.vital.value <= 0) { inSession = false; } else if (need.vital.value <= 0.5f) { grumpySlider.value -= grumpySliderDecrementRate; if (grumpySlider.value <= 0) { inSession = false; } }
+                if (need.type == NeedType.poop) { if (need.vital.value <= 0) { PoopTrigger(); need.vital.value = 1f; } } else if (need.vital.value <= 0) { inSession = false; } else if (need.vital.value <= 0.5f) { grumpySlider.value -= grumpySliderDecrementRate; if (grumpySlider.value <= 0) { inSession = false; } }
             }
             yield return null;
         }
         Invoke("BabyFail", gameOverDelay);
 	}
 
+    private void PoopTrigger() {
+        print("Im Pooping!");
+    }
 
     public void RefillVital(int val) {
         if(_needs[val].vital.value != 0)
