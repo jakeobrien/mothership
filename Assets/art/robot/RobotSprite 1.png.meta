@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: adde487557d6b5f409880260e4d5a2bc
-timeCreated: 1505625735
-licenseType: Free
+timeCreated: 1505631246
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: RobotSprite 1_0
@@ -124,7 +124,7 @@ TextureImporter:
         width: 662
         height: 179
       alignment: 9
-      pivot: {x: 0.12089018, y: 0.51507604}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
         width: 680
         height: 188
       alignment: 9
-      pivot: {x: 0.88098, y: 0.56459403}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +180,7 @@ TextureImporter:
         width: 200
         height: 204
       alignment: 9
-      pivot: {x: 1.0053259, y: 0.5715033}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
