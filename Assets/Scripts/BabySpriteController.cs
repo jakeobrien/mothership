@@ -33,7 +33,7 @@ public class BabySpriteController : MonoBehaviour {
                 switch (need.type) {
                     case NeedType.food: { if (need.vital.Value < 0.5f) { currentState = currentState | States.hungry; } else { currentState = currentState ^ States.hungry; } } 
                         break;
-                    case NeedType.sleep: { if (need.vital.Value > 0.75f) { currentState = currentState | States.sleeping; currentState = currentState ^ States.sleepy; } else if (need.vital.value < 0.35f) { currentState = currentState | States.sleepy; currentState = currentState ^ States.sleeping; } else { currentState = currentState ^ States.sleeping; currentState = currentState ^ States.sleepy; } }
+                    case NeedType.sleep: { if (need.vital.Value > 0.75f) { currentState = currentState | States.sleeping; currentState = currentState ^ States.sleepy; } else if (need.vital.Value < 0.35f) { currentState = currentState | States.sleepy; currentState = currentState ^ States.sleeping; } else { currentState = currentState ^ States.sleeping; currentState = currentState ^ States.sleepy; } }
                         break;
                 }
             }
@@ -41,13 +41,15 @@ public class BabySpriteController : MonoBehaviour {
             yield return null;
         }
     } private void DetermineFace() {
-        if((currentState & States.pooping) != 0) {
-
-        } else if((currentState & States.sleepy) != 0) {
-
+        if ((currentState & States.pooping) != 0) {
+            SetFaceToRender(4);
+        } else if ((currentState & States.sleepy) != 0) {
+            SetFaceToRender(9);
         } else if ((currentState & States.hungry) != 0) {
-
-        } else if((currentState & States.))
+            SetFaceToRender(2);
+        } else {
+            SetFaceToRender(1);
+        }
     }
 
     public void ShowBabyDead() {
