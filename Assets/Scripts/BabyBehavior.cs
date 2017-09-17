@@ -8,6 +8,10 @@ using UnityEngine.UI;
 public enum NeedType { food = 1, sleep = 2, poop = 4,}
 
 public class BabyBehavior : MonoBehaviour {
+
+    public GameObject gameOverPanel;
+    public float gameOverDelay = 1f;
+
     [System.Serializable]
     private class Need
     {
@@ -22,19 +26,25 @@ public class BabyBehavior : MonoBehaviour {
     public float grumpySliderDecrementRate;
 
     private void Start() {
+        //gameOverPanel.SetActive(false);
         foreach(Need need in _needs) {
             need.vital.value = 1f;
         }
         grumpySlider.value = 1f;
+        StartCoroutine(GameSession());
     }
 
-    void Update () {
-        foreach (Need need in _needs) {
-            need.vital.value -= need.vital.speedOfDepletion * Time.deltaTime;
-            need.vital.mySlider.value = need.vital.value;
-            if(need.vital.value <= 0) { BabyFail(); }
-            else if(need.vital.value <= 0.5f) { grumpySlider.value -= grumpySliderDecrementRate; if (grumpySlider.value <= 0) { BabyFail(); } }
+    IEnumerator GameSession() {
+        bool inSession = true;
+        while (inSession) {
+            foreach (Need need in _needs) {
+                need.vital.value -= need.vital.speedOfDepletion * Time.deltaTime;
+                need.vital.mySlider.value = need.vital.value;
+                if (need.vital.value <= 0) { inSession = false; } else if (need.vital.value <= 0.5f) { grumpySlider.value -= grumpySliderDecrementRate; if (grumpySlider.value <= 0) { inSession = false; } }
+            }
+            yield return null;
         }
+        Invoke("BabyFail", gameOverDelay);
 	}
 
 
@@ -44,6 +54,7 @@ public class BabyBehavior : MonoBehaviour {
     }
 
     void BabyFail() {
-        print("You failed to take care of baby");
+        //gameOverPanel.SetActive(true);
+        print("GameOver!");
     }
 }
