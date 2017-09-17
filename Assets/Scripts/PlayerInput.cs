@@ -15,16 +15,26 @@ public class PlayerInput : MonoBehaviour
 	public KeyCode nextControlKeyCode;
 	public KeyCode prevControlKeyCode;
 
+	private float _axisValue;
+	private float _axisCursor;
+	public float _axisSmooth = 0.1f;
+	public float _axisDamp = 0.5f;
+
 	private void Update()
 	{
 		if (Input.GetKey(increaseKeyCode))
 		{
-			if (CurrentControls != null) CurrentControls.AxisValue = 1f;
+			_axisValue = Mathf.SmoothDamp(_axisValue, 1f, ref _axisCursor, _axisSmooth);
 		}
-		else if (Input.GetKeyDown(decreaseKeyCode))
+		else if (Input.GetKey(decreaseKeyCode))
 		{
-			if (CurrentControls != null) CurrentControls.AxisValue = -1f;
+			_axisValue = Mathf.SmoothDamp(_axisValue, -1f, ref _axisCursor, _axisSmooth);
 		}
+		else
+		{
+			_axisValue = Mathf.SmoothDamp(_axisValue, 0f, ref _axisCursor, _axisDamp);
+		}
+		if (CurrentControls != null) CurrentControls.AxisValue = _axisValue;
 		if (Input.GetKeyDown(buttonKeyCode))
 		{
 			if (CurrentControls != null) CurrentControls.ButtonPressed = true;
@@ -45,15 +55,21 @@ public class PlayerInput : MonoBehaviour
 
 	private void NextControl()
 	{
-		CurrentControls.AxisValue = 0f;
-		CurrentControls.ButtonPressed = false;
+		ResetControls();
 		_controlsIndex = ControlsManager.Instance.GetNext(_controlsIndex);
 	}
 
 	private void PrevControl()
 	{
-		CurrentControls.AxisValue = 0f;
-		CurrentControls.ButtonPressed = false;
+		ResetControls();
 		_controlsIndex = ControlsManager.Instance.GetPrev(_controlsIndex);
 	}
+
+	private void ResetControls()
+	{
+		_axisValue = 0f;
+		CurrentControls.AxisValue = 0f;
+		CurrentControls.ButtonPressed = false;
+	}
+
 }
