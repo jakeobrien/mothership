@@ -131,8 +131,8 @@ GameObject:
   - component: {fileID: 4225948155820984}
   - component: {fileID: 212714415793511018}
   - component: {fileID: 50409044212559020}
-  - component: {fileID: 58102458686644628}
-  - component: {fileID: 114502545322077090}
+  - component: {fileID: 58842933686578916}
+  - component: {fileID: 114051957187894764}
   m_Layer: 13
   m_Name: Body
   m_TagString: Untagged
@@ -341,10 +341,10 @@ GameObject:
   - component: {fileID: 4841312283281100}
   - component: {fileID: 114555280785407750}
   - component: {fileID: 114299609200977112}
-  - component: {fileID: 82984264838122096}
-  - component: {fileID: 82032920346182194}
-  - component: {fileID: 82835126341967704}
-  - component: {fileID: 114432848007298890}
+  - component: {fileID: 82735047282858632}
+  - component: {fileID: 82296246520316080}
+  - component: {fileID: 82222303600948210}
+  - component: {fileID: 114167798973375448}
   m_Layer: 13
   m_Name: Mothership
   m_TagString: Untagged
@@ -465,8 +465,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1601496147198496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9, y: 3.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.76, y: 3.66, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 4671216288187440}
   m_Father: {fileID: 4841312283281100}
@@ -879,7 +879,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58102458686644628
+--- !u!58 &58842933686578916
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1214,7 +1214,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1.8}
   m_EdgeRadius: 0
---- !u!82 &82032920346182194
+--- !u!82 &82222303600948210
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1294,7 +1294,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!82 &82835126341967704
+--- !u!82 &82296246520316080
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1374,7 +1374,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!82 &82984264838122096
+--- !u!82 &82735047282858632
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1454,6 +1454,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114051957187894764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475328932255054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5eea9269fe9408fa86b2cda4a7a64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mothership: {fileID: 114299609200977112}
+  milkRefillRate: 0.1
+--- !u!114 &114167798973375448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916931566970966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2f86b0041dc384b8125398f630a089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armStart: {fileID: 8300000, guid: 4f59b0f8b9a7f7144ae79b0d727c2b77, type: 3}
+  armLoop: {fileID: 8300000, guid: 4f59b0f8b9a7f7144ae79b0d727c2b77, type: 3}
+  clampHard: {fileID: 8300000, guid: 098d8da81f2f0f648927e14e9ae0448b, type: 3}
+  clampSoft: {fileID: 8300000, guid: 4638aad8d23c42c4681b2d39153a2c49, type: 3}
+  boobRefill: {fileID: 8300000, guid: cc85c6ec5f1d6554f9afa97656fd5b19, type: 3}
+  boobSquirtStart: {fileID: 8300000, guid: e91ec7d4d1eb43b488a76872fc7c0b60, type: 3}
+  boobSquirtLoop: {fileID: 8300000, guid: 5655b61de920bc749925a2d5d603a903, type: 3}
+  lullaby: {fileID: 8300000, guid: 67231c682b67de142a31cd81fa116238, type: 3}
+  walk: {fileID: 8300000, guid: da342719656540548951834fd95abe91, type: 3}
+  audio: {fileID: 82735047282858632}
+  armSource: {fileID: 82296246520316080}
+  boobSource: {fileID: 82222303600948210}
 --- !u!114 &114275531728648876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1491,8 +1527,8 @@ MonoBehaviour:
   bottomPinch: {fileID: 114884907157555752}
   magnet: {fileID: 114362390221260158}
   milkTank: 1
-  milkDepleteRate: 0.2
-  rs: {fileID: 114432848007298890}
+  milkDepleteRate: 0
+  rs: {fileID: 114167798973375448}
 --- !u!114 &114362390221260158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8906,8 +8942,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300012, guid: adde487557d6b5f409880260e4d5a2bc, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300018, guid: e005a86448b5d0a45b17d296d0782e29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8954,7 +8990,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.96, y: 0}
-  m_ConnectedAnchor: {x: -3.3899999, y: -0.8100006}
+  m_ConnectedAnchor: {x: -2.7700002, y: -0.6800001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

@@ -16,6 +16,7 @@ public class RobotSounds : MonoBehaviour {
 	public AudioSource audio;
 	public AudioSource armSource;
 	public AudioSource boobSource;
+	public AudioSource lullabySource;
 	// Use this for initialization
 	void Start () {
 		_msInput = GetComponentInParent<MothershipInput>();
@@ -48,6 +49,12 @@ public class RobotSounds : MonoBehaviour {
 		audio.loop = true;
 		boobSource.clip = boobSquirtStart;
         boobSource.PlayOneShot(boobSquirtStart);
+	}
+
+	public void LullabyPlay(){
+		audio.loop = true;
+		lullabySource.clip = lullaby;
+        lullabySource.PlayOneShot(lullaby);
 	}
 
 	public void StopArmSound(){
